@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#0EA5E9" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)" rx="8" />
+  <!-- Grid Lines -->
+  <g opacity="0.05">
+    <path d="M0 50 H800 M0 100 H800 M0 150 H800 M0 200 H800 M0 250 H800 M0 300 H800 M0 350 H800 M0 400 H800" stroke="#FFFFFF" stroke-width="1" />
+    <path d="M100 0 V450 M200 0 V450 M300 0 V450 M400 0 V450 M500 0 V450 M600 0 V450 M700 0 V450" stroke="#FFFFFF" stroke-width="1" />
+  </g>
+  <!-- Decorative Glowing Circles -->
+  <circle cx="400" cy="225" r="140" fill="none" stroke="url(#accent)" stroke-width="1.5" opacity="0.15" />
+  <circle cx="400" cy="225" r="180" fill="none" stroke="url(#accent)" stroke-width="1" stroke-dasharray="10 5" opacity="0.1" />
+  <!-- Central Icon (Folder/Code theme) -->
+  <g transform="translate(360, 185)">
+    <rect width="80" height="80" rx="20" fill="url(#accent)" opacity="0.9" />
+    <!-- SVG Code Symbol -->
+    <path d="M28 48L20 40L28 32M52 32L60 40L52 48" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <path d="M44 28L36 52" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" fill="none" />
+  </g>
+</svg>

@@ -193,12 +193,13 @@ document.addEventListener('DOMContentLoaded', () => {
   // ============================================
   // Project Detail Modal Data
   // ============================================
+  // START_PROJECTS_DATA
   const projects = [
     {
       id: 'Currency_chart',
       title: 'Currency_chart',
       longDesc: '這是一個功能完整的匯率追蹤應用程式，使用 Python Flask 框架開發。系統使用 Playwright 和 Chromium 自動化瀏覽器來從 Mastercard 公開服務獲取匯率資料，並在背景自動更新。核心功能包括多時間區間圖表顯示（近 7/30/90/180 天）、幣別搜尋與快速交換介面、歷史記錄查看功能等。首次啟動時會自動檢查並更新匯率數據，如需獲取 Cookies 會自動顯示瀏覽器窗口約 10 秒，整個過程完全自動化。',
-      tech: 'Python Flask',
+      tech: 'Python Flask, Chart.js',
       image: './assets/img/portfolio/Currency_chart.png',
       github: 'https://github.com/tsz7250/Currency_chart'
     },
@@ -214,7 +215,7 @@ document.addEventListener('DOMContentLoaded', () => {
       id: 'add-subtitles-extended',
       title: 'add-subtitles-extended',
       longDesc: '這是一個 Firefox 瀏覽器擴充套件，基於原始 add-subtitles 進行修復及優化。主要功能是為網頁上的任何 video 元素新增外部字幕檔案。我新增了多項功能：<ul><li>支援 ASS/SSA 字幕格式（原本只支援 SRT、VTT）。</li><li>使用 OpenCC-JS 實現自動簡體中文轉繁體中文。</li><li>支援 ZIP 壓縮檔中的字幕（使用 JSZip 函式庫）。</li><li>修復全螢幕播放功能。</li><li>改善外觀設計。</li></ul>同時，我重構了內容腳本注入邏輯，增加錯誤處理與狀態檢查，優化 OpenCC 加載流程，修復了字幕上傳功能。使用者可以調整字幕位置、大小和顏色，並使用鍵盤快捷鍵控制。',
-      tech: 'JavaScript / Browser Extension',
+      tech: 'JavaScript (Web Ext)',
       image: './assets/img/portfolio/add-subtitles-extended.png',
       github: 'https://github.com/tsz7250/add-subtitles-extended'
     },
@@ -222,15 +223,15 @@ document.addEventListener('DOMContentLoaded', () => {
       id: 'Coursio',
       title: 'Coursio',
       longDesc: '本專案參考 Wanna Class 進行架構重構與功能擴充，打造一個現代化的元智大學選課助手。技術架構由原始的 Vanilla JS + jQuery 升級為 Vue 3 + Vite + SCSS，並使用 Electron 封裝為桌面應用程式。主要功能包括：<ul><li><strong>我的課表</strong>：直觀記錄歷年課程，支援匯出功能。</li><li><strong>課程查詢</strong>：快速檢索全校課表，顯示學分、教室及教授等詳細資訊。</li><li><strong>自動選課</strong>：模擬使用者行為進行全自動化搶課，大幅提升成功率。</li><li><strong>成績查詢</strong>：快速檢閱各學期成績紀錄。</li><li><strong>系統設定</strong>：彈性調整重試頻率與登入偏好。</li></ul>專案強調安全性與效能，承諾不紀錄帳號密碼，並優化資源消耗。透過 SQLite3 管理資料並整合 Puppeteer 處理網頁自動化，有效解決了官網操作繁瑣與驗證碼搜尋的痛點。',
-      tech: 'Electron / Vue 3 / Vite',
+      tech: 'Electron',
       image: './assets/img/portfolio/Coursio.png',
       github: 'https://github.com/tsz7250/Coursio'
     },
     {
       id: 'n8n-launcher',
       title: 'n8n-launcher',
-      longDesc: '這是一個專為 Windows 系統設計的 n8n Docker 容器管理工具，提供簡單易用的圖形化選單介面來管理 n8n 工作流程自動化平台。主要功能包括：<ul><li><strong>一鍵啟動</strong>：自動檢查並啟動 Docker，無需手動配置。</li><li><strong>自動配置</strong>：首次使用時自動建立 docker-compose.yml 配置檔。</li><li><strong>版本管理</strong>：支援更新到指定版本或最新版本。</li><li><strong>資料備份</strong>：一鍵備份 n8n 工作流程和 PostgreSQL 資料庫。</li><li><strong>資料還原</strong>：輕鬆還原先前備份的資料。</li><li><strong>重新安裝</strong>：快速重新安裝並可選擇保留資料。</li></ul>工具使用 Batch 腳本開發，整合 Docker Compose 來管理容器生命週期。腳本會自動檢查 Docker Desktop 運行狀態，提供友好的錯誤提示，並在服務就緒後自動開啟瀏覽器。',
-      tech: 'Batchfile / Windows / Docker',
+      longDesc: '這是一個專為 Windows 系統設計的 n8n Docker 容器管理工具，提供簡單易用的圖形化選單介面來管理 n8n 工作流程自動化平台。主要功能包括：<ul><li><strong>一鍵啟動</strong>：自動檢查並啟動 Docker，無需手動配置。</li><li><strong>自動配置</strong>：首次使用時自動建立 docker-compose.yml 配置檔。</li><li><strong>資料備份</strong>：一鍵備份 n8n 工作流程和 PostgreSQL 資料庫。</li><li><strong>資料還原</strong>：輕鬆還原先前備份的資料。</li><li><strong>重新安裝</strong>：快速重新安裝並可選擇保留資料。</li></ul>工具使用 Batch 腳本開發，整合 Docker Compose 來管理容器生命週期。腳本會自動檢查 Docker Desktop 運行狀態，提供友好的錯誤提示，並在服務就緒後自動開啟瀏覽器。',
+      tech: 'Batchfile, Docker',
       image: './assets/img/portfolio/n8n-launcher.png',
       github: 'https://github.com/tsz7250/n8n-launcher'
     },
@@ -238,7 +239,7 @@ document.addEventListener('DOMContentLoaded', () => {
       id: 'ezoe-work_scraper',
       title: 'ezoe-work_scraper',
       longDesc: '這是一個針對 ezoe.work 網站的文章爬蟲工具，可以批次抓取文章並輸出為格式化的 DOCX 與 PDF 檔案。主要功能包括：<ul><li><strong>批次爬取</strong>：從 urls.txt 或指定 txt 檔案讀取 URL，每篇產生獨立的 Markdown 檔案（書名_篇數.md）。</li><li><strong>合併轉換</strong>：依書名自動合併多篇 Markdown，轉成一本完整的 DOCX 檔案，可設定行距、標題樣式等格式。</li><li><strong>簡轉繁與 PDF</strong>：程式會將 DOCX 以 Microsoft Word 進行簡體轉繁體，並轉成 PDF 檔案。需在 Windows 環境且已安裝 Microsoft Word，否則會略過此步驟。</li><li><strong>一鍵流程</strong>：執行 main.py 可依序完成「爬取 → 轉 DOCX/PDF」的完整流程。</li></ul>技術上使用 Python 開發，整合 BeautifulSoup 進行網頁解析、pypandoc 進行 Markdown 轉 DOCX、pywin32 進行 Word 自動化操作（簡轉繁與 PDF 轉換）。',
-      tech: 'Python',
+      tech: 'Python, Scrapy',
       image: './assets/img/portfolio/ezoe-work_scraper.png',
       github: 'https://github.com/tsz7250/ezoe-work_scraper'
     },
@@ -246,7 +247,7 @@ document.addEventListener('DOMContentLoaded', () => {
       id: 'bible-tracker',
       title: 'bible-tracker',
       longDesc: '這是一個以 LINE Bot + Google Apps Script (GAS) 打造的聖經與生命讀經進度追蹤應用。系統幫助小組成員記錄每日讀經、自動同步一年讀經計畫與對應的生命讀經篇目，並即時統計群組排名。主要功能包括：<ul><li><strong>多元記錄模式</strong>：支援自由讀經、一年計畫與生命讀經的獨立勾選與智慧同步。</li><li><strong>進度儀表板</strong>：即時視覺化舊約、新約及生命讀經的完成百分比。</li><li><strong>群組互動</strong>：透過 LINE Bot 取得專屬連結，並查看成員間的閱讀比例與即時排名。</li><li><strong>安全與優化</strong>：實作 SHA-256 加密的 PIN 碼驗證，並提供批次儲存邏輯以提升使用者體驗。</li></ul>專案整合了 LINE Messaging API 與 Google Sheets，展現了如何利用雲端工具解決社群協作與個人進度管理的需求。',
-      tech: 'LINE Bot / Google Apps Script',
+      tech: 'LINE Bot, Google Apps Script',
       image: './assets/img/portfolio/bible-tracker.png',
       github: 'https://github.com/tsz7250/bible-tracker'
     },
@@ -268,7 +269,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     {
       id: '1111_WebProgramming_Final',
-      title: '隨機選擇器',
+      title: '隨機選擇器與記帳系統',
       longDesc: '這是一個校園美食隨機選擇器系統，作為 Web 程式設計課程的期末專題報告。系統提供以下功能：<ul><li><strong>隨機選擇功能</strong>：支援食物類別和餐廳類型的多層級篩選，智能推薦演算法幫助學生快速決定要吃什麼。</li><li><strong>用戶管理系統</strong>：包括用戶註冊、登入驗證、會話管理（使用 PHP Session），並實現了密碼加密與 SQL 注入防護等安全性措施。</li><li><strong>記帳系統</strong>：讓使用者可以記錄每次消費金額，支援依食物類別統計支出、依日期範圍查詢記錄、計算總消費金額等功能。</li><li><strong>歷史功能</strong>：可以查看過去的選擇記錄和消費明細，並提供視覺化消費趨勢圖表。</li></ul>技術架構使用 HTML/CSS/JavaScript 處理前端，PHP 處理後端邏輯，MySQL 資料庫儲存資料，採用正規化的資料表結構設計。系統採用響應式設計，支援手機和電腦使用。',
       tech: 'Web 程式設計 ｜ HTML, CSS, JS, PHP, MySQL',
       image: './assets/img/portfolio/1111_WebProgramming_Final.png',
@@ -277,7 +278,7 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       id: '1131_Chatbot',
       title: '1131 - 微型應用程式設計實務',
-      longDesc: '這門課程的作業整合了 9 個 AI 聊天機器人和微型應用程式專案，讓我對不同 AI 服務的整合有了深入理解。專案包含：<ul><li><strong>LLM_Chatbot</strong>：使用 Google Gemini API 建立的網頁版聊天機器人，具備安全設定和對話功能。</li><li><strong>LLM_Line</strong>：整合 Gemini API 的 Line Bot，提供智能對話服務。</li><li><strong>LangChain</strong>：基於 LangChain 框架開發的 AI 應用程式。</li><li><strong>SentimentAnalysis</strong>：使用 Microsoft Language Service 進行情感分析，判斷文字的正向、負向或中性情緒。</li><li><strong>TextToSpeech</strong>：整合 Azure Translation 和 Speech Services 的 Line Bot，提供文字翻譯和語音合成功能。</li><li><strong>TranslatorBot</strong>：使用 Azure Translation Service 的多語言翻譯服務。</li><li><strong>TranslatorBot(+voice)</strong>：進階版翻譯機器人，支援語音輸入和語音輸出。</li><li><strong>TranslatorWeb</strong>：基於 Flask 的網頁翻譯應用程式，整合 Azure 翻譯和語音服務。</li><li><strong>GeminiSafetySetting</strong>：展示 Google Gemini API 的安全設定範例。</li></ul>技術棧使用 Python 開發，整合 Flask 框架、Google Gemini API、Microsoft Azure Cognitive Services、LangChain，以及 Line Messaging API。',
+      longDesc: '這門課程的作業整合了 9 個 AI 聊天機器人和微型應用程式專案，讓我對不同 AI 服務的整合有了深入理解。專案包含：<ul><li><strong>LLM_Chatbot</strong>：使用 Google Gemini API 建立的網頁版聊天機器人，具備安全設定 and 對話功能。</li><li><strong>LLM_Line</strong>：整合 Gemini API 的 Line Bot，提供智能對話服務。</li><li><strong>LangChain</strong>：基於 LangChain 框架開發的 AI 應用程式。</li><li><strong>SentimentAnalysis</strong>：使用 Microsoft Language Service 進行情感分析，判斷文字的正向、負向或中性情緒。</li><li><strong>TextToSpeech</strong>：整合 Azure Translation 和 Speech Services 的 Line Bot，提供文字翻譯和語音合成功能。</li><li><strong>TranslatorBot</strong>：使用 Azure Translation Service 的多語言翻譯服務。</li><li><strong>TranslatorBot(+voice)</strong>：進階版翻譯機器人，支援語音輸入和語音輸出。</li><li><strong>TranslatorWeb</strong>：基於 Flask 的網頁翻譯應用程式，整合 Azure 翻譯和語音服務。</li><li><strong>GeminiSafetySetting</strong>：展示 Google Gemini API 的安全設定範例。</li></ul>技術棧使用 Python 開發，整合 Flask 框架、Google Gemini API、Microsoft Azure Cognitive Services、LangChain，以及 Line Messaging API。',
       tech: '微型應用程式設計實務 ｜ Line Bot, Flask, Gemini, Azure, LangChain',
       image: './assets/img/portfolio/1131_Chatbot.png',
       github: 'https://github.com/tsz7250/1131_Chatbot'
@@ -325,12 +326,13 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       id: '1111_WebProgramming',
       title: '1111 - Web 程式設計',
-      longDesc: '這是我第一門 Web 程式設計課程，透過多個作業讓我對基礎的 Web 開發技術有了完整的理解：<ul><li><strong>Captcha 專案</strong>：實作智能驗證碼系統，使用圖片分類驗證用戶身份，包含 IP 封鎖功能，學習如何產生圖形驗證碼並驗證使用者輸入，理解 Session 管理與安全性考量。</li><li><strong>LineChart 專案</strong>：使用 Google Charts API 製作互動式折線圖，支援 CSV 資料匯入和處理，學習如何將資料視覺化，以及如何處理不同格式的資料檔案。</li><li><strong>Querying 專案</strong>：實作多格式資料查詢系統，支援 CSV、XML 和 URL 資料來源的篩選和查詢，練習讀取與解析 CSV、XML 格式的檔案，並將資料存入資料庫，實作複雜的 SQL 查詢與前端篩選功能。</li></ul>技術棧包含 HTML 結構設計、CSS 樣式美化、JavaScript 互動處理、PHP 後端邏輯、以及 MySQL 資料庫操作。',
+      longDesc: '這是我第一門 Web 程式設計課程，透過多個作業讓我對基礎的 Web 開發技術有了完整的理解：<ul><li><strong>Captcha 專案</strong>：實作智能驗證碼系統，使用圖片分類驗證用戶身份，包含 IP 封鎖功能，學習如何產生圖形驗證碼並驗證使用者輸入，理解 Session 管理與安全性考量。</li><li><strong>LineChart 專案</strong>：使用 Google Charts API 製作互動式折線圖，支援 CSV 資料匯入和處理，學習如何將資料視覺化，以及如何處理不同格式的資料檔案。</li><li><strong>Querying 專案</strong>：實作多格式資料查詢系統，支援 CSV、XML 和 URL 資料來源的篩選 and 查詢，練習讀取與解析 CSV、XML 格式的檔案，並將資料存入資料庫，實作複雜的 SQL 查詢與前端篩選功能。</li></ul>技術棧包含 HTML 結構設計、CSS 樣式美化、JavaScript 互動處理、PHP 後端邏輯、以及 MySQL 資料庫操作。',
       tech: 'Web 程式設計 ｜ HTML, PHP, JavaScript, Google Charts, MySQL',
       image: './assets/img/portfolio/1111_WebProgramming.png',
       github: 'https://github.com/tsz7250/1111_WebProgramming'
     }
   ];
+// END_PROJECTS_DATA
 
   const projectMap = projects.reduce((map, project) => {
     map[project.id] = project;

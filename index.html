@@ -64,13 +64,14 @@
     <div class="tab-panel active" id="panel-personal">
       <div class="peek-carousel-container">
         <div class="peek-carousel" data-carousel="personal">
+          <!-- START_PERSONAL_PROJECTS -->
           <!-- Card 1: Currency_chart -->
           <article class="project-card" data-project-id="Currency_chart">
             <img class="project-card__image" src="./assets/img/portfolio/Currency_chart.png" alt="Currency_chart" />
             <div class="project-card__content">
               <h3 class="project-card__title">Currency_chart</h3>
-              <p class="project-card__desc">使用 Python Flask 框架開發多幣種匯率走勢圖，支援近 7／30／90／180 天圖表、幣別搜尋與交換，並在背景自動更新資料。</p>
-              <p class="project-card__meta">Python Flask</p>
+              <p class="project-card__desc">多幣種匯率走勢圖，支援 7/30/90/180 天圖表、幣別搜尋與交換，背景資料自動更新。</p>
+              <p class="project-card__meta">Python Flask, Chart.js</p>
               <a href="https://github.com/tsz7250/Currency_chart" class="project-card__btn">GitHub →</a>
             </div>
           </article>
@@ -79,7 +80,7 @@
             <img class="project-card__image" src="./assets/img/portfolio/yzuCourseBot.png" alt="yzuCourseBot" />
             <div class="project-card__content">
               <h3 class="project-card__title">yzuCourseBot</h3>
-              <p class="project-card__desc">自動選課機器人，並基於原始 yzuCourseBot 進行 fork 並針對 Windows 環境優化的版本。</p>
+              <p class="project-card__desc">元智大學自動選課機器人，針對 Windows 環境進行 Fork 優化版。</p>
               <p class="project-card__meta">Python</p>
               <a href="https://github.com/tsz7250/yzuCourseBot" class="project-card__btn">GitHub →</a>
             </div>
@@ -89,8 +90,8 @@
             <img class="project-card__image" src="./assets/img/portfolio/add-subtitles-extended.png" alt="add-subtitles-extended" />
             <div class="project-card__content">
               <h3 class="project-card__title">add-subtitles-extended</h3>
-              <p class="project-card__desc">基於原始 add-subtitles 瀏覽器插件新增簡繁自動轉換功能，並修復原本的功能缺陷。</p>
-              <p class="project-card__meta">JavaScript / Browser Extension</p>
+              <p class="project-card__desc">瀏覽器字幕插件擴充版，修復原版缺陷並新增簡繁自動轉換功能。</p>
+              <p class="project-card__meta">JavaScript (Web Ext)</p>
               <a href="https://github.com/tsz7250/add-subtitles-extended" class="project-card__btn">GitHub →</a>
             </div>
           </article>
@@ -99,7 +100,7 @@
             <img class="project-card__image" src="./assets/img/portfolio/Coursio.png" alt="Coursio" />
             <div class="project-card__content">
               <h3 class="project-card__title">Coursio</h3>
-              <p class="project-card__desc">參考 WannaClass 的框架進行重構，並優化課表查詢功能、自動選課等功能。</p>
+              <p class="project-card__desc">基於 WannaClass 框架進行重構與優化的課表查詢與自動選課桌面應用。</p>
               <p class="project-card__meta">Electron</p>
               <a href="https://github.com/tsz7250/Coursio" class="project-card__btn">GitHub →</a>
             </div>
@@ -109,8 +110,8 @@
             <img class="project-card__image" src="./assets/img/portfolio/n8n-launcher.png" alt="n8n-launcher" />
             <div class="project-card__content">
               <h3 class="project-card__title">n8n-launcher</h3>
-              <p class="project-card__desc">用於 Windows 的 n8n Docker 容器管理工具，提供圖形化選單介面來管理 n8n 工作流程自動化平台，支援一鍵啟動、自動配置、版本管理、資料備份與還原等功能。</p>
-              <p class="project-card__meta">Batchfile / Windows / Docker</p>
+              <p class="project-card__desc">Windows 的 n8n Docker 容器圖形化管理工具，支援一鍵啟動、自動配置、備份與還原。</p>
+              <p class="project-card__meta">Batchfile, Docker</p>
               <a href="https://github.com/tsz7250/n8n-launcher" class="project-card__btn">GitHub →</a>
             </div>
           </article>
@@ -119,8 +120,8 @@
             <img class="project-card__image" src="./assets/img/portfolio/ezoe-work_scraper.png" alt="ezoe-work_scraper" />
             <div class="project-card__content">
               <h3 class="project-card__title">ezoe-work_scraper</h3>
-              <p class="project-card__desc">針對 ezoe.work 抓取書籍，並輸出為格式化的 DOCX 與 PDF。支援從 URL 列表批次爬取、依書名合併 Markdown 後產出 DOCX 和 PDF、並支援簡轉繁。</p>
-              <p class="project-card__meta">Python</p>
+              <p class="project-card__desc">書籍抓取與格式化匯出工具，支援批量爬取、簡繁轉換並合成為 DOCX/PDF。</p>
+              <p class="project-card__meta">Python, Scrapy</p>
               <a href="https://github.com/tsz7250/ezoe-work_scraper" class="project-card__btn">GitHub →</a>
             </div>
           </article>
@@ -129,11 +130,12 @@
             <img class="project-card__image" src="./assets/img/portfolio/bible-tracker.png" alt="bible-tracker" />
             <div class="project-card__content">
               <h3 class="project-card__title">bible-tracker</h3>
-              <p class="project-card__desc">一個以 LINE Bot + Google Apps Script (GAS) 打造的讀經進度紀錄應用，幫助小組成員記錄每日讀經、追蹤完成度，並查看群組統計排名。</p>
-              <p class="project-card__meta">LINE Bot / Google Apps Script</p>
+              <p class="project-card__desc">以 LINE Bot 結合 GAS 打造的讀經進度紀錄應用，支援群組統計與完成度排名。</p>
+              <p class="project-card__meta">LINE Bot, Google Apps Script</p>
               <a href="https://github.com/tsz7250/bible-tracker" class="project-card__btn">GitHub →</a>
             </div>
           </article>
+<!-- END_PERSONAL_PROJECTS -->
         </div>
       </div>
       <div class="carousel-nav">
@@ -147,12 +149,13 @@
     <div class="tab-panel" id="panel-final">
       <div class="peek-carousel-container">
         <div class="peek-carousel" data-carousel="final">
+          <!-- START_FINAL_PROJECTS -->
           <!-- Card 1: 1131_Chatbot_Final -->
           <article class="project-card" data-project-id="1131_Chatbot_Final">
             <img class="project-card__image" src="./assets/img/portfolio/1131_Chatbot_Final.png" alt="1131_Chatbot_Final" />
             <div class="project-card__content">
               <h3 class="project-card__title">電影AI助手聊天機器人</h3>
-              <p class="project-card__desc">多模態聊天機器人，整合了電影相關的 AI 服務，包括智能對話、電影搜尋、圖片識別和字幕翻譯等功能。</p>
+              <p class="project-card__desc">電影多模態 AI 助手，整合智能對話、電影搜尋、圖片識別和字幕翻譯等功能。</p>
               <p class="project-card__meta">微型應用程式設計實務 ｜ Line Bot, Gemini, TMDB API</p>
               <a href="https://github.com/tsz7250/1131_Chatbot_Final" class="project-card__btn">GitHub →</a>
             </div>
@@ -162,21 +165,22 @@
             <img class="project-card__image" src="./assets/img/portfolio/1122_Web_Final.png" alt="1122_Web_Final" />
             <div class="project-card__content">
               <h3 class="project-card__title">卡利西里餐廳訂餐系統</h3>
-              <p class="project-card__desc">使用 Python Flask 框架開發的餐廳訂餐系統模擬應用程式，並應用了 PlotlyJS、Google Gemini、HTML5 Canvas 等技術。</p>
+              <p class="project-card__desc">使用 Python Flask 開發的餐廳訂餐系統模擬應用程式，具備數據視覺化與智慧選餐。</p>
               <p class="project-card__meta">網站程式設計實務 ｜ Flask, PlotlyJS, Gemini</p>
               <a href="https://github.com/tsz7250/1122_Web_Final" class="project-card__btn">GitHub →</a>
             </div>
           </article>
-          <!-- Card 3: 1111_WebProgramming 期末 -->
+          <!-- Card 3: 1111_WebProgramming_Final -->
           <article class="project-card" data-project-id="1111_WebProgramming_Final">
             <img class="project-card__image" src="./assets/img/portfolio/1111_WebProgramming_Final.png" alt="1111_WebProgramming_Final" />
             <div class="project-card__content">
-              <h3 class="project-card__title">隨機選擇器</h3>
-              <p class="project-card__desc">製作隨機選擇器，功能有進行食物類別、餐廳篩選的學餐隨機選擇器。使用者可以註冊帳號，使用記帳功能。</p>
+              <h3 class="project-card__title">隨機選擇器與記帳系統</h3>
+              <p class="project-card__desc">結合食物與餐廳篩選的學餐隨機選擇器，並內建使用者註冊與個人記帳功能。</p>
               <p class="project-card__meta">Web 程式設計 ｜ HTML, CSS, JS, PHP, MySQL</p>
               <a href="https://github.com/tsz7250/1111_WebProgramming_Final" class="project-card__btn">GitHub →</a>
             </div>
           </article>
+<!-- END_FINAL_PROJECTS -->
         </div>
       </div>
       <div class="carousel-nav">
@@ -190,6 +194,7 @@
     <div class="tab-panel" id="panel-homework">
       <div class="peek-carousel-container">
         <div class="peek-carousel" data-carousel="homework">
+          <!-- START_HOMEWORK_PROJECTS -->
           <!-- Card 1: 1131_Chatbot -->
           <article class="project-card" data-project-id="1131_Chatbot">
             <img class="project-card__image" src="./assets/img/portfolio/1131_Chatbot.png" alt="1131_Chatbot" />
@@ -260,6 +265,7 @@
               <a href="https://github.com/tsz7250/1111_WebProgramming" class="project-card__btn">GitHub →</a>
             </div>
           </article>
+<!-- END_HOMEWORK_PROJECTS -->
         </div>
       </div>
       <div class="carousel-nav">
