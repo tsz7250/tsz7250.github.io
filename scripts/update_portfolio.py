@@ -75,49 +75,56 @@ METADATA_OVERRIDES = {
     # 📚 3. 課程作業與實驗
     "1131_Chatbot": {
         "title": "1131 - 微型應用程式設計實務",
-        "meta": "微型應用程式設計實務 ｜ Line Bot, Flask, Gemini, Azure, LangChain",
+        "meta": "微型應用程式設計實務<br>`Line Bot`, `Flask`, `Gemini`, `Azure`, `LangChain`",
+        "meta_html": "微型應用程式設計實務 ｜ Line Bot, Flask, Gemini, Azure, LangChain",
         "desc": "AI 聊天機器人集合（包含網頁聊天室、Line Bot、情感分析、語音轉換、LangChain 等）。",
         "desc_html": "AI 聊天機器人集合：包含 Gemini 網頁聊天機器人、Line Bot、情感分析機器人、翻譯機器人、文字轉語音機器人等。",
         "longDesc": "這門課程的作業整合了 9 個 AI 聊天機器人和微型應用程式專案，讓我對不同 AI 服務的整合有了深入理解。專案包含：<ul><li><strong>LLM_Chatbot</strong>：使用 Google Gemini API 建立的網頁版聊天機器人，具備安全設定 and 對話功能。</li><li><strong>LLM_Line</strong>：整合 Gemini API 的 Line Bot，提供智能對話服務。</li><li><strong>LangChain</strong>：基於 LangChain 框架開發的 AI 應用程式。</li><li><strong>SentimentAnalysis</strong>：使用 Microsoft Language Service 進行情感分析，判斷文字的正向、負向或中性情緒。</li><li><strong>TextToSpeech</strong>：整合 Azure Translation 和 Speech Services 的 Line Bot，提供文字翻譯和語音合成功能。</li><li><strong>TranslatorBot</strong>：使用 Azure Translation Service 的多語言翻譯服務。</li><li><strong>TranslatorBot(+voice)</strong>：進階版翻譯機器人，支援語音輸入和語音輸出。</li><li><strong>TranslatorWeb</strong>：基於 Flask 的網頁翻譯應用程式，整合 Azure 翻譯和語音服務。</li><li><strong>GeminiSafetySetting</strong>：展示 Google Gemini API 的安全設定範例。</li></ul>技術棧使用 Python 開發，整合 Flask 框架、Google Gemini API、Microsoft Azure Cognitive Services、LangChain，以及 Line Messaging API。"
     },
     "1121_LinearAlgebra": {
         "title": "1121 - 線性代數",
-        "meta": "線性代數 ｜ C#, C++, LINGO",
+        "meta": "線性代數<br>`C#`, `C++`, `LINGO`",
+        "meta_html": "線性代數 ｜ C#, C++, LINGO",
         "desc": "線性代數應用（整數線性規劃 ILP、C# 幾何測量系統、點燈遊戲、RREF 計算器）。",
         "desc_html": "線性代數應用專案：整數線性規劃 (ILP)、C# 幾何測量系統、點燈遊戲、RREF 簡化階梯形矩陣計算器。",
         "longDesc": "這門課程的作業展示了線性代數在實際程式設計中的應用，包含 4 個專案：<ul><li><strong>ILP 專案</strong>：使用 C++ 生成整數線性規劃問題，並使用 LINGO 軟體解決圖形二分割問題，學習如何將實際問題轉化為數學模型。</li><li><strong>Measurement 專案</strong>：使用 C# 開發幾何測量系統，實作向量運算、矩陣轉換等線性代數概念，應用於幾何計算和測量。</li><li><strong>LightsOutGame 專案</strong>：使用 C# 實作點燈遊戲，運用線性代數來解決遊戲邏輯，理解如何用矩陣運算來處理遊戲狀態。</li><li><strong>RREF 專案</strong>：使用 C++ 實作簡化階梯形矩陣計算器，可以處理任意大小的矩陣並進行高斯消去法運算，實現線性方程組求解。</li></ul>這些專案涵蓋了矩陣運算和線性方程組求解、幾何計算和測量、整數線性規劃建模等核心概念，讓我理解到線性代數不只是抽象的數學概念，更是解決實際問題的重要工具。"
     },
     "1122_HDL": {
         "title": "1122 - 數位系統實驗（二）",
-        "meta": "數位系統實驗（二） ｜ VHDL",
+        "meta": "數位系統實驗（二）<br>`VHDL`",
+        "meta_html": "數位系統實驗（二） ｜ VHDL",
         "desc": "VHDL 數位電路設計（包含 ALU、狀態機、紅綠燈控制等 15 個實驗專案）。",
         "desc_html": "VHDL 數位電路設計：包含 ALU、狀態機、計數器、LED 控制、紅綠燈控制等 15 個實驗專案。",
         "longDesc": "這門課程透過 15 個實驗專案，讓我深入理解數位電路的設計與實作。專案涵蓋了從基礎到進階的各種數位電路：<ul><li><strong>Lab 04</strong>：使用 SOP/POS 方法實作布林函數，並實作八對三編碼器。</li><li><strong>Lab 05</strong>：設計基本組合邏輯電路與進階組合電路。</li><li><strong>Lab 06</strong>：實作 Moore machine 二進制編碼狀態機與序列偵測器 FSM。</li><li><strong>Lab 07</strong>：設計算數邏輯運算單元 (ALU)。</li><li><strong>Lab 08</strong>：實作移位暫存器與同步計數器。</li><li><strong>Lab 09</strong>：設計非同步清除同步載入的 60 模計數器。</li><li><strong>Lab 10-12</strong>：實作 LED 控制器、PWM 呼吸燈（自動調節 LED 亮度）、跑馬燈（LED 週期性位移電路）。</li><li><strong>Lab 13-14</strong>：設計七段顯示器計時器與 0-99 計數器。</li><li><strong>Lab 15</strong>：實作紅綠燈控制與倒數計時器。</li></ul>每個實驗都需要使用 VHDL 語言來描述電路行為，使用 Intel Quartus Prime 進行編譯，使用 ModelSim 執行 testbench 進行功能驗證，並在 FPGA 開發板上驗證功能。這個課程讓我對硬體描述語言、數位系統設計流程、狀態機設計、時序電路設計，以及硬體與軟體的差異有了深刻的理解。"
     },
     "1122_WebsiteProgrammingPractice": {
         "title": "1122 - 網站程式設計實務",
-        "meta": "網站程式設計實務 ｜ Flask, JavaScript, Plotly.js",
+        "meta": "網站程式設計實務<br>`Flask`, `JavaScript`, `Plotly.js`",
+        "meta_html": "網站程式設計實務 ｜ Flask, JavaScript, Plotly.js",
         "desc": "網頁開發作業系列（LLM 聊天機器人、日圓匯率即時視覺化、RPG 小遊戲、亂數選擇器等）。",
         "desc_html": "網頁開發作業：LLM 聊天機器人、日圓匯率即時視覺化、RPG 小遊戲、亂數選擇器等。",
         "longDesc": "這門課程的作業涵蓋了多個 Web 開發的實務練習，包含 15 個專案，讓我對完整的前後端開發有了全面的理解：<ul><li><strong>基礎前端開發</strong>：HelloJavaScript（JavaScript 基礎測試）和 ClubCourse（JavaScript 自動排課系統）。</li><li><strong>資料視覺化專案</strong>：HelloPlotly（Plotly.js 基礎測試）、PieChart（圓餅圖製作）、LineAndScatter（折線圖與散點圖）、以及 JPYExchange（日圓匯率即時視覺化，使用 Plotly.js 繪製動態圖表並實作自動更新機制）。</li><li><strong>互動式應用</strong>：MindQuiz（JavaScript 心理測驗純前端版本）、MindQuiz_py（Python Flask 心理測驗後端版本）、RandomSelector（亂數選擇器）、以及 SimCardCalulator（SIM卡購買天數計算器）。</li><li><strong>遊戲開發</strong>：SimpleRPG（JavaScript RPG 小遊戲，練習物件導向程式設計與遊戲邏輯）和 SimpleRPG+LLM（結合 LLM 的 RPG 遊戲）。</li><li><strong>AI 應用</strong>：Chatbot（使用 Flask 整合 LLM API 開發聊天機器人，學習如何處理非同步請求與串流回應）、HelloLangChain（Google Gemini API 實作）、以及 LLMPhoto（LLM 圖片理解服務）。</li></ul>技術棧使用 HTML/CSS/JavaScript 處理前端，Python Flask 處理後端，整合 Plotly.js 進行資料視覺化，以及 Google Gemini API 和 LangChain 進行 AI 應用開發。每個專案都強調前後端的整合，讓我理解到現代 Web 開發的完整流程。"
     },
     "1122_AssemblyLanguage": {
         "title": "1122 - 組合語言與計算機組織",
-        "meta": "組合語言與計算機組織 ｜ RISC-V Assembly",
+        "meta": "組合語言與計算機組織<br>`RISC-V Assembly`",
+        "meta_html": "組合語言與計算機組織 ｜ RISC-V Assembly",
         "desc": "RISC-V 組合語言實作（排列組合計算、五格姓名學分析、史坦納樹演算法）。",
         "desc_html": "RISC-V 組合語言專案：排列組合計算程式、五格姓名學分析程式、史坦納樹演算法實作。",
         "longDesc": "這門課程讓我深入理解底層計算機運作原理，透過 RISC-V 組合語言實作 3 個程式：<ul><li><strong>Combination & Permutation 專案</strong>：實作組合與排列數計算程式，包括計算 mPn（排列）、mCn（組合）、m^n（次方）、以及 mHn（重複組合），學習如何用組合語言實作階乘、排列、組合等數學運算，以及遞迴函數的組合語言實作。</li><li><strong>Nameology of the Five Elements 專案</strong>：實作五格姓名學分析程式，處理字串輸入並進行複雜的數值計算，包括輸入姓名筆劃數、計算三才五格數值等功能，練習了字串處理與迴圈控制。</li><li><strong>Steiner Trees 專案</strong>：實作史坦納樹演算法，學習如何用組合語言處理圖形演算法，包括計算圖形中的最小史坦納樹、支援座標點輸入與輸出等功能，理解了如何在低階語言中實作複雜的演算法。</li></ul>每個專案都需要仔細管理暫存器、記憶體位置，以及函數呼叫的堆疊操作，使用 RISC-V Assembly Language 編寫源碼（.asm 檔案）。開發過程中，我必須手動管理暫存器、理解指令管線化、以及處理記憶體存取。"
     },
     "1112_ComputerProgramming": {
         "title": "1112 - 程式設計二",
-        "meta": "程式設計二 ｜ C++",
+        "meta": "程式設計二<br>`C++`",
+        "meta_html": "程式設計二 ｜ C++",
         "desc": "C++ 物件導向專案（Fibonacci、編碼機、Spanning Tree、撲克牌遊戲、多型計算）。",
         "desc_html": "C++ 物件導向：Fibonacci Sequence、編碼機、Graph 和 Spanning Tree、撲克牌遊戲、多型計算四邊形。",
         "longDesc": "這門課程專注於 C++ 物件導向程式設計，透過 5 個專案讓我扎實掌握 OOP 的核心概念：<ul><li><strong>BigFib 專案</strong>：實作大數運算的費波那契數列，練習遞迴與迭代的實作，以及大數運算的處理。</li><li><strong>CipherMachine 專案</strong>：實作字串處理與編碼機器，學習字元處理與檔案 I/O 操作。</li><li><strong>Graph 專案</strong>：實作圖形容器設計與路徑演算法，包括實作深度優先搜尋 (DFS) 與廣度優先搜尋 (BFS)，以及圖論與生成樹演算法。</li><li><strong>PokerDealer 專案</strong>：實作撲克牌發牌系統，練習類別設計與繼承，學習如何設計良好的物件導向架構。</li><li><strong>Quadrilaterals 專案</strong>：實作四邊形類別設計與點座標系統，深入理解虛擬函數、抽象類別與多型的概念，學習如何設計可擴展的類別層次結構。</li></ul>每個專案都強調良好的程式設計習慣，包括類別封裝、介面設計、以及程式碼重用。這些練習為我後續的軟體開發奠定了堅實的基礎。"
     },
     "1111_WebProgramming": {
         "title": "1111 - Web 程式設計",
-        "meta": "Web 程式設計 ｜ HTML, PHP, JavaScript, Google Charts, MySQL",
+        "meta": "Web 程式設計<br>`HTML`, `PHP`, `JavaScript`, `Google Charts`, `MySQL`",
+        "meta_html": "Web 程式設計 ｜ HTML, PHP, JavaScript, Google Charts, MySQL",
         "desc": "網頁基礎開發作業（驗證碼系統、CSV/XML 資料處理、Google Charts 折線圖等）。",
         "desc_html": "網頁開發作業：驗證碼系統、資料處理（.csv/.xml）、Google Charts 折線圖、篩選查詢等。",
         "longDesc": "這是我第一門 Web 程式設計課程，透過多個作業讓我對基礎的 Web 開發技術有了完整的理解：<ul><li><strong>Captcha 專案</strong>：實作智能驗證碼系統，使用圖片分類驗證用戶身份，包含 IP 封鎖功能，學習如何產生圖形驗證碼並驗證使用者輸入，理解 Session 管理與安全性考量。</li><li><strong>LineChart 專案</strong>：使用 Google Charts API 製作互動式折線圖，支援 CSV 資料匯入和處理，學習如何將資料視覺化，以及如何處理不同格式的資料檔案。</li><li><strong>Querying 專案</strong>：實作多格式資料查詢系統，支援 CSV、XML 和 URL 資料來源的篩選 and 查詢，練習讀取與解析 CSV、XML 格式的檔案，並將資料存入資料庫，實作複雜的 SQL 查詢與前端篩選功能。</li></ul>技術棧包含 HTML 結構設計、CSS 樣式美化、JavaScript 互動處理、PHP 後端邏輯、以及 MySQL 資料庫操作。"
