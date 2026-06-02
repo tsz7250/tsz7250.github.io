@@ -54,6 +54,7 @@
 | **[電影AI助手聊天機器人](https://github.com/tsz7250/1131_Chatbot_Final)** | 微型應用程式設計實務<br>`Line Bot`, `Gemini`, `TMDB API` | 電影多模態 AI 助手，整合智能對話、電影搜尋、圖片識別和字幕翻譯等功能。 |
 | **[卡利西里餐廳訂餐系統](https://github.com/tsz7250/1122_Web_Final)** | 網站程式設計實務<br>`Flask`, `PlotlyJS`, `Gemini`, `Canvas` | 使用 Python Flask 開發的餐廳訂餐系統模擬應用程式，具備數據視覺化與智慧選餐。 |
 | **[隨機選擇器與記帳系統](https://github.com/tsz7250/1111_WebProgramming_Final)** | Web 程式設計<br>`HTML`, `CSS`, `JS`, `PHP`, `MySQL` | 結合食物與餐廳篩選的學餐隨機選擇器，並內建使用者註冊與個人記帳功能。 |
+| **[1142_OpenPlatformSoftware_Final](https://github.com/tsz7250/1142_OpenPlatformSoftware_Final)** | Python | 基於混合檢索與 LLM 技術之專利問答系統，專為中華民國智慧財產局（TIPO）專利常見問答 (FAQ) 開放資料集打造。 |
 <!-- END_FINAL_PROJECTS -->
 
 ### 📚 3. 課程作業與實驗 (Coursework & Lab Exercises)

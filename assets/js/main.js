@@ -276,6 +276,14 @@ document.addEventListener('DOMContentLoaded', () => {
       github: 'https://github.com/tsz7250/1111_WebProgramming_Final'
     },
     {
+      id: '1142_OpenPlatformSoftware_Final',
+      title: '1142_OpenPlatformSoftware_Final',
+      longDesc: '基於混合檢索與 LLM 技術之專利問答系統，專為中華民國智慧財產局（TIPO）專利常見問答 (FAQ) 開放資料集打造。<br><br>想要深入暸解更多，請點擊下方按鈕前往 GitHub 倉庫參閱程式碼與專案細節。',
+      tech: 'Python',
+      image: './assets/img/portfolio/1142_OpenPlatformSoftware_Final.png',
+      github: 'https://github.com/tsz7250/1142_OpenPlatformSoftware_Final'
+    },
+    {
       id: '1131_Chatbot',
       title: '1131 - 微型應用程式設計實務',
       longDesc: '這門課程的作業整合了 9 個 AI 聊天機器人和微型應用程式專案，讓我對不同 AI 服務的整合有了深入理解。專案包含：<ul><li><strong>LLM_Chatbot</strong>：使用 Google Gemini API 建立的網頁版聊天機器人，具備安全設定 and 對話功能。</li><li><strong>LLM_Line</strong>：整合 Gemini API 的 Line Bot，提供智能對話服務。</li><li><strong>LangChain</strong>：基於 LangChain 框架開發的 AI 應用程式。</li><li><strong>SentimentAnalysis</strong>：使用 Microsoft Language Service 進行情感分析，判斷文字的正向、負向或中性情緒。</li><li><strong>TextToSpeech</strong>：整合 Azure Translation 和 Speech Services 的 Line Bot，提供文字翻譯和語音合成功能。</li><li><strong>TranslatorBot</strong>：使用 Azure Translation Service 的多語言翻譯服務。</li><li><strong>TranslatorBot(+voice)</strong>：進階版翻譯機器人，支援語音輸入和語音輸出。</li><li><strong>TranslatorWeb</strong>：基於 Flask 的網頁翻譯應用程式，整合 Azure 翻譯和語音服務。</li><li><strong>GeminiSafetySetting</strong>：展示 Google Gemini API 的安全設定範例。</li></ul>技術棧使用 Python 開發，整合 Flask 框架、Google Gemini API、Microsoft Azure Cognitive Services、LangChain，以及 Line Messaging API。',
