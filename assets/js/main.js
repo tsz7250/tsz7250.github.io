@@ -277,9 +277,9 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     {
       id: '1142_OpenPlatformSoftware_Final',
-      title: '1142_OpenPlatformSoftware_Final',
-      longDesc: '基於混合檢索與 LLM 技術之專利問答系統，專為中華民國智慧財產局（TIPO）專利常見問答 (FAQ) 開放資料集打造。<br><br>想要深入暸解更多，請點擊下方按鈕前往 GitHub 倉庫參閱程式碼與專案細節。',
-      tech: 'Python',
+      title: '中華民國智慧財產局專利行政實務智能客服',
+      longDesc: '這是一個專為中華民國智慧財產局（TIPO）專利常見問答 (FAQ) 開放資料集打造的專利問答系統，基於混合檢索與 LLM 技術開發。系統提供以下主要功能與特色：<ul><li><strong>混合檢索架構</strong>：整合關鍵字、BM25 與向量相似度搜尋（Hybrid Search），並搭配 CrossEncoder 進行重排序，大幅提升檢索準確率。</li><li><strong>雙代理機制 (Dual-Agent)</strong>：運用 Agent 1 進行初步回答，Agent 2 進行審查與補充，並內建對齊與覆蓋率救援機制。</li><li><strong>上下文感知與重寫</strong>：自動將使用者的提問進行上下文感知重寫，以提供更精確的檢索結果。</li><li><strong>智慧快取機制</strong>：支援精確比對與模糊比對快取，有效降低 LLM 推論成本與系統回應延遲。</li><li><strong>多端支援與本地部署</strong>：提供 Web UI 與 LINE Bot 雙平台存取，系統經過優化，可在 6GB VRAM（如 RTX 2060）的消費級設備上流暢運行。</li></ul>這個專案展示了如何結合 RAG 架構與多代理系統來解決專業領域的問答需求。',
+      tech: '開放平台軟體 ｜ RAG, LLM, Python',
       image: './assets/img/portfolio/1142_OpenPlatformSoftware_Final.png',
       github: 'https://github.com/tsz7250/1142_OpenPlatformSoftware_Final'
     },
