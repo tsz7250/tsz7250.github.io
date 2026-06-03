@@ -2,6 +2,7 @@ import os
 import sys
 import json
 import requests
+import subprocess
 
 # ---------------------------------------------------------
 # 1. 專案自訂中文化標題與技術棧描述覆寫表 (Metadata Overrides)
@@ -371,7 +372,23 @@ def update_file_between_markers(file_path, start_marker, end_marker, new_content
     return True
 
 # ---------------------------------------------------------
-# 8. 主程式執行
+# 8. 獲取最後手動提交日期 (排除機器人自動提交)
+# ---------------------------------------------------------
+def get_last_user_commit_date():
+    try:
+        # 排除包含 "Auto-update" 的 Commit，取得最近一次手動 Commit 的日期 (%as 格式為 YYYY-MM-DD)
+        date = subprocess.check_output(
+            ["git", "log", "-1", "--invert-grep", "--grep=Auto-update", "--format=%as"],
+            text=True
+        ).strip()
+        return date
+    except Exception as e:
+        print(f"[警告] 無法透過 Git 取得最後更新日期: {e}")
+        from datetime import datetime
+        return datetime.now().strftime("%Y-%m-%d")
+
+# ---------------------------------------------------------
+# 9. 主程式執行
 # ---------------------------------------------------------
 def main():
     username = "tsz7250"
@@ -460,6 +477,10 @@ def main():
     # 產生並更新 assets/js/main.js 中的 projects 陣列
     js_projects_content = generate_js_projects_content(all_projects, base_dir)
     update_file_between_markers(js_path, "// START_PROJECTS_DATA", "// END_PROJECTS_DATA", js_projects_content)
+
+    # 取得最後更新日期並寫入 index.html
+    last_update = get_last_user_commit_date()
+    update_file_between_markers(html_path, "<!-- START_LAST_UPDATE -->", "<!-- END_LAST_UPDATE -->", last_update)
 
 if __name__ == "__main__":
     main()
