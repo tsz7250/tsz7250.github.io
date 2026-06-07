@@ -54,12 +54,12 @@
 | **[電影AI助手聊天機器人](https://github.com/tsz7250/1131_Chatbot_Final)** | 微型應用程式設計實務<br>`Line Bot`, `Gemini`, `TMDB API` | 電影多模態 AI 助手，整合智能對話、電影搜尋、圖片識別和字幕翻譯等功能。 |
 | **[卡利西里餐廳訂餐系統](https://github.com/tsz7250/1122_Web_Final)** | 網站程式設計實務<br>`Flask`, `PlotlyJS`, `Gemini`, `Canvas` | 使用 Python Flask 開發的餐廳訂餐系統模擬應用程式，具備數據視覺化與智慧選餐。 |
 | **[隨機選擇器與記帳系統](https://github.com/tsz7250/1111_WebProgramming_Final)** | Web 程式設計<br>`HTML`, `CSS`, `JS`, `PHP`, `MySQL` | 結合食物與餐廳篩選的學餐隨機選擇器，並內建使用者註冊與個人記帳功能。 |
-| **[中華民國智慧財產局專利行政實務智能客服](https://github.com/tsz7250/1142_OpenPlatformSoftware_Final)** | 開放平台軟體<br>`RAG`, `LLM`, `Python` | 基於混合檢索與 LLM 技術之專利問答系統，專為中華民國智慧財產局（TIPO）專利常見問答 (FAQ) 開放資料集打造。 |
+| **[1142_OpenPlatformSoftware_Final](https://github.com/tsz7250/1142_OpenPlatformSoftware_Final)** | Python | 基於混合檢索與 LLM 技術之專利問答系統，專為中華民國智慧財產局（TIPO）專利常見問答 (FAQ) 開放資料集打造。 |
 <!-- END_FINAL_PROJECTS -->
 
 ### 📚 3. 課程作業與實驗 (Coursework & Lab Exercises)
 <!-- START_HOMEWORK_PROJECTS -->
-| 課程名稱 / 專案 | 課程名稱 & 技術棧 | 課程作業與實驗簡介 |
+| 課程名稱 / 專案 | 主要技術棧 | 課程作業與實驗簡介 |
 | :--- | :--- | :--- |
 | **[1131 - 微型應用程式設計實務](https://github.com/tsz7250/1131_Chatbot)** | 微型應用程式設計實務<br>`Line Bot`, `Flask`, `Gemini`, `Azure`, `LangChain` | AI 聊天機器人集合（包含網頁聊天室、Line Bot、情感分析、語音轉換、LangChain 等）。 |
 | **[1121 - 線性代數](https://github.com/tsz7250/1121_LinearAlgebra)** | 線性代數<br>`C#`, `C++`, `LINGO` | 線性代數應用（整數線性規劃 ILP、C# 幾何測量系統、點燈遊戲、RREF 計算器）。 |
