@@ -39,11 +39,11 @@
 | 專案名稱 | 技術棧 | 專案簡介 |
 | :--- | :--- | :--- |
 | **[Currency_chart](https://github.com/tsz7250/Currency_chart)** | Python Flask, Chart.js | 多幣種匯率走勢圖，支援 7/30/90/180 天圖表、幣別搜尋與交換，背景資料自動更新。 |
-| **[add-subtitles-extended](https://github.com/tsz7250/add-subtitles-extended)** | JavaScript (Web Ext) | 瀏覽器字幕插件擴充版，修復原版缺陷並新增簡繁自動轉換功能。 |
 | **[yzuCourseBot](https://github.com/tsz7250/yzuCourseBot)** | Python | 元智大學自動選課機器人，針對 Windows 環境進行 Fork 優化版。 |
+| **[add-subtitles-extended](https://github.com/tsz7250/add-subtitles-extended)** | JavaScript (Web Ext) | 瀏覽器字幕插件擴充版，修復原版缺陷並新增簡繁自動轉換功能。 |
+| **[Coursio](https://github.com/tsz7250/Coursio)** | Electron | 基於 WannaClass 框架進行重構與優化的課表查詢與自動選課桌面應用。 |
 | **[n8n-launcher](https://github.com/tsz7250/n8n-launcher)** | Batchfile, Docker | Windows 的 n8n Docker 容器圖形化管理工具，支援一鍵啟動、自動配置、備份與還原。 |
 | **[ezoe-work_scraper](https://github.com/tsz7250/ezoe-work_scraper)** | Python, Scrapy | 書籍抓取與格式化匯出工具，支援批量爬取、簡繁轉換並合成為 DOCX/PDF。 |
-| **[Coursio](https://github.com/tsz7250/Coursio)** | Electron | 基於 WannaClass 框架進行重構與優化的課表查詢與自動選課桌面應用。 |
 | **[bible-tracker](https://github.com/tsz7250/bible-tracker)** | LINE Bot, Google Apps Script | 以 LINE Bot 結合 GAS 打造的讀經進度紀錄應用，支援群組統計與完成度排名。 |
 <!-- END_PERSONAL_PROJECTS -->
 
@@ -54,7 +54,7 @@
 | **[電影AI助手聊天機器人](https://github.com/tsz7250/1131_Chatbot_Final)** | 微型應用程式設計實務<br>`Line Bot`, `Gemini`, `TMDB API` | 電影多模態 AI 助手，整合智能對話、電影搜尋、圖片識別和字幕翻譯等功能。 |
 | **[卡利西里餐廳訂餐系統](https://github.com/tsz7250/1122_Web_Final)** | 網站程式設計實務<br>`Flask`, `PlotlyJS`, `Gemini`, `Canvas` | 使用 Python Flask 開發的餐廳訂餐系統模擬應用程式，具備數據視覺化與智慧選餐。 |
 | **[隨機選擇器與記帳系統](https://github.com/tsz7250/1111_WebProgramming_Final)** | Web 程式設計<br>`HTML`, `CSS`, `JS`, `PHP`, `MySQL` | 結合食物與餐廳篩選的學餐隨機選擇器，並內建使用者註冊與個人記帳功能。 |
-| **[1142_OpenPlatformSoftware_Final](https://github.com/tsz7250/1142_OpenPlatformSoftware_Final)** | Python | 基於混合檢索與 LLM 技術之專利問答系統，專為中華民國智慧財產局（TIPO）專利常見問答 (FAQ) 開放資料集打造。 |
+| **[中華民國智慧財產局專利行政實務智能客服](https://github.com/tsz7250/1142_OpenPlatformSoftware_Final)** | 開放平台軟體<br>`RAG`, `LLM`, `Python` | 基於混合檢索與 LLM 技術之專利問答系統，專為中華民國智慧財產局（TIPO）專利常見問答 (FAQ) 開放資料集打造。 |
 <!-- END_FINAL_PROJECTS -->
 
 ### 📚 3. 課程作業與實驗 (Coursework & Lab Exercises)

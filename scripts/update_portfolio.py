@@ -73,6 +73,13 @@ METADATA_OVERRIDES = {
         "desc": "結合食物與餐廳篩選的學餐隨機選擇器，並內建使用者註冊與個人記帳功能。",
         "longDesc": "這是一個校園美食隨機選擇器系統，作為 Web 程式設計課程的期末專題報告。系統提供以下功能：<ul><li><strong>隨機選擇功能</strong>：支援食物類別和餐廳類型的多層級篩選，智能推薦演算法幫助學生快速決定要吃什麼。</li><li><strong>用戶管理系統</strong>：包括用戶註冊、登入驗證、會話管理（使用 PHP Session），並實現了密碼加密與 SQL 注入防護等安全性措施。</li><li><strong>記帳系統</strong>：讓使用者可以記錄每次消費金額，支援依食物類別統計支出、依日期範圍查詢記錄、計算總消費金額等功能。</li><li><strong>歷史功能</strong>：可以查看過去的選擇記錄和消費明細，並提供視覺化消費趨勢圖表。</li></ul>技術架構使用 HTML/CSS/JavaScript 處理前端，PHP 處理後端邏輯，MySQL 資料庫儲存資料，採用正規化的資料表結構設計。系統採用響應式設計，支援手機和電腦使用。"
     },
+    "1142_OpenPlatformSoftware_Final": {
+        "title": "中華民國智慧財產局專利行政實務智能客服",
+        "meta": "開放平台軟體<br>`RAG`, `LLM`, `Python`",
+        "meta_html": "開放平台軟體 ｜ RAG, LLM, Python",
+        "desc": "基於混合檢索與 LLM 技術之專利問答系統，專為中華民國智慧財產局（TIPO）專利常見問答 (FAQ) 開放資料集打造。",
+        "longDesc": "這是一個專為中華民國智慧財產局（TIPO）專利常見問答 (FAQ) 開放資料集打造的專利問答系統，基於混合檢索與 LLM 技術開發。系統提供以下主要功能與特色：<ul><li><strong>混合檢索架構</strong>：整合關鍵字、BM25 與向量相似度搜尋（Hybrid Search），並搭配 CrossEncoder 進行重排序，大幅提升檢索準確率。</li><li><strong>雙代理機制 (Dual-Agent)</strong>：運用 Agent 1 進行初步回答，Agent 2 進行審查與補充，並內建對齊與覆蓋率救援機制。</li><li><strong>上下文感知與重寫</strong>：自動將使用者的提問進行上下文感知重寫，以提供更精確的檢索結果。</li><li><strong>智慧快取機制</strong>：支援精確比對與模糊比對快取，有效降低 LLM 推論成本與系統回應延遲。</li><li><strong>多端支援與本地部署</strong>：提供 Web UI 與 LINE Bot 雙平台存取，系統經過優化，可在 6GB VRAM（如 RTX 2060）的消費級設備上流暢運行。</li></ul>這個專案展示了如何結合 RAG 架構與多代理系統來解決專業領域的問答需求。"
+    },
     # 📚 3. 課程作業與實驗
     "1131_Chatbot": {
         "title": "1131 - 微型應用程式設計實務",
@@ -152,19 +159,20 @@ MOCK_DATA = [
         }
     },
     {
-        "name": "Final Projects",
-        "slug": "final-projects",
+        "name": "UG-Final Projects",
+        "slug": "ug-final-projects",
         "items": {
             "nodes": [
                 {"name": "1131_Chatbot_Final", "url": "https://github.com/tsz7250/1131_Chatbot_Final", "description": None, "primaryLanguage": {"name": "Python"}},
                 {"name": "1122_Web_Final", "url": "https://github.com/tsz7250/1122_Web_Final", "description": None, "primaryLanguage": {"name": "Python"}},
-                {"name": "1111_WebProgramming_Final", "url": "https://github.com/tsz7250/1111_WebProgramming_Final", "description": None, "primaryLanguage": {"name": "PHP"}}
+                {"name": "1111_WebProgramming_Final", "url": "https://github.com/tsz7250/1111_WebProgramming_Final", "description": None, "primaryLanguage": {"name": "PHP"}},
+                {"name": "1142_OpenPlatformSoftware_Final", "url": "https://github.com/tsz7250/1142_OpenPlatformSoftware_Final", "description": None, "primaryLanguage": {"name": "Python"}}
             ]
         }
     },
     {
-        "name": "Courseworks",
-        "slug": "courseworks",
+        "name": "UG-Homeworks",
+        "slug": "ug-homeworks",
         "items": {
             "nodes": [
                 {"name": "1131_Chatbot", "url": "https://github.com/tsz7250/1131_Chatbot", "description": None, "primaryLanguage": {"name": "Python"}},
@@ -409,9 +417,9 @@ def main():
 
     # 分類映射配置
     categories = {
-        "personal": {"slug_kw": ["side", "personal"], "readme_tag": ("<!-- START_PERSONAL_PROJECTS -->", "<!-- END_PERSONAL_PROJECTS -->"), "html_tag": ("<!-- START_PERSONAL_PROJECTS -->", "<!-- END_PERSONAL_PROJECTS -->"), "items": []},
-        "final": {"slug_kw": ["final"], "readme_tag": ("<!-- START_FINAL_PROJECTS -->", "<!-- END_FINAL_PROJECTS -->"), "html_tag": ("<!-- START_FINAL_PROJECTS -->", "<!-- END_FINAL_PROJECTS -->"), "items": []},
-        "homework": {"slug_kw": ["course", "homework", "academic"], "readme_tag": ("<!-- START_HOMEWORK_PROJECTS -->", "<!-- END_HOMEWORK_PROJECTS -->"), "html_tag": ("<!-- START_HOMEWORK_PROJECTS -->", "<!-- END_HOMEWORK_PROJECTS -->"), "items": []}
+        "personal": {"slug": "side-projects", "readme_tag": ("<!-- START_PERSONAL_PROJECTS -->", "<!-- END_PERSONAL_PROJECTS -->"), "html_tag": ("<!-- START_PERSONAL_PROJECTS -->", "<!-- END_PERSONAL_PROJECTS -->"), "items": []},
+        "final": {"slug": "ug-final-projects", "readme_tag": ("<!-- START_FINAL_PROJECTS -->", "<!-- END_FINAL_PROJECTS -->"), "html_tag": ("<!-- START_FINAL_PROJECTS -->", "<!-- END_FINAL_PROJECTS -->"), "items": []},
+        "homework": {"slug": "ug-homeworks", "readme_tag": ("<!-- START_HOMEWORK_PROJECTS -->", "<!-- END_HOMEWORK_PROJECTS -->"), "html_tag": ("<!-- START_HOMEWORK_PROJECTS -->", "<!-- END_HOMEWORK_PROJECTS -->"), "items": []}
     }
 
     # 將抓取回來的 lists 進行分類歸檔
@@ -421,7 +429,7 @@ def main():
         
         matched = False
         for cat_id, cfg in categories.items():
-            if any(kw in slug for kw in cfg["slug_kw"]):
+            if slug == cfg["slug"]:
                 cfg["items"] = items
                 matched = True
                 print(f"[分類] GitHub List '{node['name']}' 已成功歸類至 {cat_id}")
