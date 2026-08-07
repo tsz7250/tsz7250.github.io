@@ -605,6 +605,51 @@ a.cta-project:hover {
   display: block;
 }
 
+/* Sub Tabs Navigation */
+.subtabs-nav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 36px;
+}
+
+.subtab-btn {
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+  background: transparent;
+  color: var(--text);
+  opacity: 0.7;
+}
+
+.subtab-btn:hover {
+  opacity: 1;
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.subtab-btn.active {
+  background: var(--accent);
+  color: var(--bg);
+  border-color: var(--accent);
+  opacity: 1;
+  font-weight: 600;
+  box-shadow: 0 2px 10px rgba(var(--accent-rgb, 255, 165, 0), 0.2);
+}
+
+/* Sub Panel Control */
+.sub-panel {
+  display: none;
+}
+
+.sub-panel.active {
+  display: block;
+}
+
 /* ------------------------------------------------------------------------------- */
 /* Peek Carousel (Card Slider) */
 /* ------------------------------------------------------------------------------- */

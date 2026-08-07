@@ -56,8 +56,8 @@
     <!-- Tabs Navigation -->
     <nav class="tabs-nav">
       <button class="tab-btn active" data-tab="personal">個人專案</button>
-      <button class="tab-btn" data-tab="final">期末分組報告</button>
-      <button class="tab-btn" data-tab="homework">課程作業</button>
+      <button class="tab-btn" data-tab="ug">大學部專案</button>
+      <button class="tab-btn" data-tab="pg">研究所專案</button>
     </nav>
 
     <!-- Tab Panel: 個人專案 -->
@@ -145,11 +145,20 @@
       </div>
     </div>
 
-    <!-- Tab Panel: 期末分組報告 -->
-    <div class="tab-panel" id="panel-final">
-      <div class="peek-carousel-container">
-        <div class="peek-carousel" data-carousel="final">
-          <!-- START_FINAL_PROJECTS -->
+    <!-- Tab Panel: 大學部專案 -->
+    <div class="tab-panel" id="panel-ug">
+      <div class="subtabs-container">
+        <!-- Sub Tabs Navigation -->
+        <div class="subtabs-nav">
+          <button class="subtab-btn active" data-subtab="ug-final">期末分組報告</button>
+          <button class="subtab-btn" data-subtab="ug-homework">課程作業</button>
+        </div>
+
+        <!-- Sub Panel: 大學部期末分組報告 -->
+        <div class="sub-panel active" id="panel-ug-final">
+          <div class="peek-carousel-container">
+            <div class="peek-carousel" data-carousel="ug-final">
+              <!-- START_UG_FINAL_PROJECTS -->
           <!-- Card 1: 1131_Chatbot_Final -->
           <article class="project-card" data-project-id="1131_Chatbot_Final">
             <img class="project-card__image" src="./assets/img/portfolio/1131_Chatbot_Final.png" alt="1131_Chatbot_Final" />
@@ -190,21 +199,21 @@
               <a href="https://github.com/tsz7250/1142_OpenPlatformSoftware_Final" class="project-card__btn">GitHub →</a>
             </div>
           </article>
-<!-- END_FINAL_PROJECTS -->
+<!-- END_UG_FINAL_PROJECTS -->
+            </div>
+          </div>
+          <div class="carousel-nav">
+            <button class="carousel-arrow carousel-prev" data-carousel="ug-final" aria-label="Previous">‹</button>
+            <div class="carousel-dots" data-carousel="ug-final"></div>
+            <button class="carousel-arrow carousel-next" data-carousel="ug-final" aria-label="Next">›</button>
+          </div>
         </div>
-      </div>
-      <div class="carousel-nav">
-        <button class="carousel-arrow carousel-prev" data-carousel="final" aria-label="Previous">‹</button>
-        <div class="carousel-dots" data-carousel="final"></div>
-        <button class="carousel-arrow carousel-next" data-carousel="final" aria-label="Next">›</button>
-      </div>
-    </div>
 
-    <!-- Tab Panel: 課程作業 -->
-    <div class="tab-panel" id="panel-homework">
-      <div class="peek-carousel-container">
-        <div class="peek-carousel" data-carousel="homework">
-          <!-- START_HOMEWORK_PROJECTS -->
+        <!-- Sub Panel: 大學部課程作業 -->
+        <div class="sub-panel" id="panel-ug-homework">
+          <div class="peek-carousel-container">
+            <div class="peek-carousel" data-carousel="ug-homework">
+              <!-- START_UG_HOMEWORK_PROJECTS -->
           <!-- Card 1: 1131_Chatbot -->
           <article class="project-card" data-project-id="1131_Chatbot">
             <img class="project-card__image" src="./assets/img/portfolio/1131_Chatbot.png" alt="1131_Chatbot" />
@@ -285,13 +294,58 @@
               <a href="https://github.com/tsz7250/1142_AI-assistedSoftwareDevelopment" class="project-card__btn">GitHub →</a>
             </div>
           </article>
-<!-- END_HOMEWORK_PROJECTS -->
+<!-- END_UG_HOMEWORK_PROJECTS -->
+            </div>
+          </div>
+          <div class="carousel-nav">
+            <button class="carousel-arrow carousel-prev" data-carousel="ug-homework" aria-label="Previous">‹</button>
+            <div class="carousel-dots" data-carousel="ug-homework"></div>
+            <button class="carousel-arrow carousel-next" data-carousel="ug-homework" aria-label="Next">›</button>
+          </div>
         </div>
       </div>
-      <div class="carousel-nav">
-        <button class="carousel-arrow carousel-prev" data-carousel="homework" aria-label="Previous">‹</button>
-        <div class="carousel-dots" data-carousel="homework"></div>
-        <button class="carousel-arrow carousel-next" data-carousel="homework" aria-label="Next">›</button>
+    </div>
+
+    <!-- Tab Panel: 研究所專案 -->
+    <div class="tab-panel" id="panel-pg">
+      <div class="subtabs-container">
+        <!-- Sub Tabs Navigation -->
+        <div class="subtabs-nav">
+          <button class="subtab-btn active" data-subtab="pg-final">期末分組報告</button>
+          <button class="subtab-btn" data-subtab="pg-homework">課程作業</button>
+        </div>
+
+        <!-- Sub Panel: 研究所期末分組報告 -->
+        <div class="sub-panel active" id="panel-pg-final">
+          <div class="peek-carousel-container">
+            <div class="peek-carousel" data-carousel="pg-final">
+              <!-- START_PG_FINAL_PROJECTS -->
+
+<!-- END_PG_FINAL_PROJECTS -->
+            </div>
+          </div>
+          <div class="carousel-nav">
+            <button class="carousel-arrow carousel-prev" data-carousel="pg-final" aria-label="Previous">‹</button>
+            <div class="carousel-dots" data-carousel="pg-final"></div>
+            <button class="carousel-arrow carousel-next" data-carousel="pg-final" aria-label="Next">›</button>
+          </div>
+        </div>
+
+        <!-- Sub Panel: 研究所課程作業 -->
+        <div class="sub-panel" id="panel-pg-homework">
+          <div class="peek-carousel-container">
+            <div class="peek-carousel" data-carousel="pg-homework">
+              <!-- START_PG_HOMEWORK_PROJECTS -->
+
+<!-- END_PG_HOMEWORK_PROJECTS -->
+            </div>
+          </div>
+          <div class="carousel-nav">
+            <button class="carousel-arrow carousel-prev" data-carousel="pg-homework" aria-label="Previous">‹</button>
+            <div class="carousel-dots" data-carousel="pg-homework"></div>
+            <button class="carousel-arrow carousel-next" data-carousel="pg-homework" aria-label="Next">›</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>

@@ -192,6 +192,20 @@ MOCK_DATA = [
                 {"name": "1142_AI-assistedSoftwareDevelopment", "url": "https://github.com/tsz7250/1142_AI-assistedSoftwareDevelopment", "description": None, "primaryLanguage": {"name": "C++"}}
             ]
         }
+    },
+    {
+        "name": "PG-Final Projects",
+        "slug": "pg-final-projects",
+        "items": {
+            "nodes": []
+        }
+    },
+    {
+        "name": "PG-Homeworks",
+        "slug": "pg-homeworks",
+        "items": {
+            "nodes": []
+        }
     }
 ]
 
@@ -254,7 +268,7 @@ def generate_readme_content(category_id, items):
             desc = override.get("desc", item.get("description") or "")
             md += f"| **[{title}]({url})** | {meta} | {desc} |\n"
         return md
-    elif category_id == "final":
+    elif category_id in ["ug-final", "pg-final"]:
         md = "| 專案名稱 | 課程名稱 & 技術棧 | 專案簡介 |\n| :--- | :--- | :--- |\n"
         for item in items:
             name = item["name"]
@@ -265,7 +279,7 @@ def generate_readme_content(category_id, items):
             desc = override.get("desc", item.get("description") or "")
             md += f"| **[{title}]({url})** | {meta} | {desc} |\n"
         return md
-    elif category_id == "homework":
+    elif category_id in ["ug-homework", "pg-homework"]:
         md = "| 課程名稱 / 專案 | 主要技術棧 | 課程作業與實驗簡介 |\n| :--- | :--- | :--- |\n"
         for item in items:
             name = item["name"]
@@ -426,8 +440,10 @@ def main():
     # 分類映射配置
     categories = {
         "personal": {"slug": "side-projects", "readme_tag": ("<!-- START_PERSONAL_PROJECTS -->", "<!-- END_PERSONAL_PROJECTS -->"), "html_tag": ("<!-- START_PERSONAL_PROJECTS -->", "<!-- END_PERSONAL_PROJECTS -->"), "items": []},
-        "final": {"slug": "ug-final-projects", "readme_tag": ("<!-- START_FINAL_PROJECTS -->", "<!-- END_FINAL_PROJECTS -->"), "html_tag": ("<!-- START_FINAL_PROJECTS -->", "<!-- END_FINAL_PROJECTS -->"), "items": []},
-        "homework": {"slug": "ug-homeworks", "readme_tag": ("<!-- START_HOMEWORK_PROJECTS -->", "<!-- END_HOMEWORK_PROJECTS -->"), "html_tag": ("<!-- START_HOMEWORK_PROJECTS -->", "<!-- END_HOMEWORK_PROJECTS -->"), "items": []}
+        "ug-final": {"slug": "ug-final-projects", "readme_tag": ("<!-- START_UG_FINAL_PROJECTS -->", "<!-- END_UG_FINAL_PROJECTS -->"), "html_tag": ("<!-- START_UG_FINAL_PROJECTS -->", "<!-- END_UG_FINAL_PROJECTS -->"), "items": []},
+        "ug-homework": {"slug": "ug-homeworks", "readme_tag": ("<!-- START_UG_HOMEWORK_PROJECTS -->", "<!-- END_UG_HOMEWORK_PROJECTS -->"), "html_tag": ("<!-- START_UG_HOMEWORK_PROJECTS -->", "<!-- END_UG_HOMEWORK_PROJECTS -->"), "items": []},
+        "pg-final": {"slug": "pg-final-projects", "readme_tag": ("<!-- START_PG_FINAL_PROJECTS -->", "<!-- END_PG_FINAL_PROJECTS -->"), "html_tag": ("<!-- START_PG_FINAL_PROJECTS -->", "<!-- END_PG_FINAL_PROJECTS -->"), "items": []},
+        "pg-homework": {"slug": "pg-homeworks", "readme_tag": ("<!-- START_PG_HOMEWORK_PROJECTS -->", "<!-- END_PG_HOMEWORK_PROJECTS -->"), "html_tag": ("<!-- START_PG_HOMEWORK_PROJECTS -->", "<!-- END_PG_HOMEWORK_PROJECTS -->"), "items": []}
     }
 
     # 將抓取回來的 lists 進行分類歸檔
@@ -469,9 +485,11 @@ def main():
             mock_items = []
             for name, data in METADATA_OVERRIDES.items():
                 is_personal = cat_id == "personal" and name in ["Currency_chart", "yzuCourseBot", "add-subtitles-extended", "Coursio", "n8n-launcher", "ezoe-work_scraper", "bible-tracker"]
-                is_final = cat_id == "final" and name in ["1131_Chatbot_Final", "1122_Web_Final", "1111_WebProgramming_Final"]
-                is_homework = cat_id == "homework" and name in ["1131_Chatbot", "1121_LinearAlgebra", "1122_HDL", "1122_WebsiteProgrammingPractice", "1122_AssemblyLanguage", "1112_ComputerProgramming", "1111_WebProgramming", "1142_AI-assistedSoftwareDevelopment"]
-                if is_personal or is_final or is_homework:
+                is_ug_final = cat_id == "ug-final" and name in ["1131_Chatbot_Final", "1122_Web_Final", "1111_WebProgramming_Final", "1142_OpenPlatformSoftware_Final"]
+                is_ug_homework = cat_id == "ug-homework" and name in ["1131_Chatbot", "1121_LinearAlgebra", "1122_HDL", "1122_WebsiteProgrammingPractice", "1122_AssemblyLanguage", "1112_ComputerProgramming", "1111_WebProgramming", "1142_AI-assistedSoftwareDevelopment"]
+                is_pg_final = cat_id == "pg-final" and name in []
+                is_pg_homework = cat_id == "pg-homework" and name in []
+                if is_personal or is_ug_final or is_ug_homework or is_pg_final or is_pg_homework:
                     mock_items.append({
                         "name": name,
                         "url": f"https://github.com/tsz7250/{name}",

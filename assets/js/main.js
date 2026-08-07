@@ -21,11 +21,60 @@ document.addEventListener('DOMContentLoaded', () => {
         panel.classList.remove('active');
         if (panel.id === `panel-${targetTab}`) {
           panel.classList.add('active');
-          // Reset carousel position when switching tabs
-          const carousel = panel.querySelector('.peek-carousel');
-          if (carousel) {
-            const carouselName = carousel.dataset.carousel;
+          
+          // Find active carousel (either root or inside active subpanel)
+          let activeCarouselEl = null;
+          const activeSubPanel = panel.querySelector('.sub-panel.active');
+          if (activeSubPanel) {
+            activeCarouselEl = activeSubPanel.querySelector('.peek-carousel');
+          } else {
+            activeCarouselEl = panel.querySelector('.peek-carousel');
+          }
+          
+          if (activeCarouselEl) {
+            const carouselName = activeCarouselEl.dataset.carousel;
             if (carousels[carouselName]) {
+              carousels[carouselName].cardsToShow = carousels[carouselName].getCardsToShow();
+              carousels[carouselName].createDots();
+              carousels[carouselName].goTo(0);
+            }
+          }
+        }
+      });
+    });
+  });
+
+  // ============================================
+  // Sub Tabs Navigation
+  // ============================================
+  const subtabButtons = document.querySelectorAll('.subtab-btn');
+
+  subtabButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const targetSub = btn.dataset.subtab;
+      const parentPanel = btn.closest('.tab-panel');
+      if (!parentPanel) return;
+
+      const parentSubtabButtons = parentPanel.querySelectorAll('.subtab-btn');
+      const parentSubPanels = parentPanel.querySelectorAll('.sub-panel');
+
+      // Update active sub-tab button
+      parentSubtabButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      // Update active sub-panel
+      parentSubPanels.forEach(panel => {
+        panel.classList.remove('active');
+        if (panel.id === `panel-${targetSub}`) {
+          panel.classList.add('active');
+          
+          // Reset carousel position and recalculate dimensions
+          const carouselEl = panel.querySelector('.peek-carousel');
+          if (carouselEl) {
+            const carouselName = carouselEl.dataset.carousel;
+            if (carousels[carouselName]) {
+              carousels[carouselName].cardsToShow = carousels[carouselName].getCardsToShow();
+              carousels[carouselName].createDots();
               carousels[carouselName].goTo(0);
             }
           }
@@ -64,6 +113,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     init() {
+      const nav = this.prevBtn ? this.prevBtn.closest('.carousel-nav') : null;
+      if (this.totalCards === 0) {
+        if (nav) nav.style.display = 'none';
+        return;
+      } else {
+        if (nav) nav.style.display = '';
+      }
       this.createDots();
       this.bindEvents();
       this.update();
