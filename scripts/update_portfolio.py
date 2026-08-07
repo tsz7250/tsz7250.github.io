@@ -135,7 +135,14 @@ METADATA_OVERRIDES = {
         "meta_html": "Web 程式設計 ｜ HTML, PHP, JavaScript, Google Charts, MySQL",
         "desc": "網頁基礎開發作業（驗證碼系統、CSV/XML 資料處理、Google Charts 折線圖等）。",
         "desc_html": "網頁開發作業：驗證碼系統、資料處理（.csv/.xml）、Google Charts 折線圖、篩選查詢等。",
-        "longDesc": "這是我第一門 Web 程式設計課程，透過多個作業讓我對基礎的 Web 開發技術有了完整的理解：<ul><li><strong>Captcha 專案</strong>：實作智能驗證碼系統，使用圖片分類驗證用戶身份，包含 IP 封鎖功能，學習如何產生圖形驗證碼並驗證使用者輸入，理解 Session 管理與安全性考量。</li><li><strong>LineChart 專案</strong>：使用 Google Charts API 製作互動式折線圖，支援 CSV 資料匯入和處理，學習如何將資料視覺化，以及如何處理不同格式的資料檔案。</li><li><strong>Querying 專案</strong>：實作多格式資料查詢系統，支援 CSV、XML 和 URL 資料來源的篩選 and 查詢，練習讀取與解析 CSV、XML 格式的檔案，並將資料存入資料庫，實作複雜的 SQL 查詢與前端篩選功能。</li></ul>技術棧包含 HTML 結構設計、CSS 樣式美化、JavaScript 互動處理、PHP 後端邏輯、以及 MySQL 資料庫操作。"
+        "longDesc": "這是我第一門 Web 程式設計課程，透過多個作業讓我對基礎的 Web 開發技術有了完整的理解：<ul><li><strong>Captcha 專案</strong>：實作智能驗證碼系統，使用圖片分類驗證用戶身份，包含 IP 封鎖功能，學習如何產生圖形驗證碼並驗證使用者輸入，理解 Session 管理與安全性考量。</li><li><strong>LineChart 專案</strong>：使用 Google Charts API 製作互動式折線圖，支援 CSV 資料匯入 and 處理，學習如何將資料視覺化，以及如何處理不同格式的資料檔案。</li><li><strong>Querying 專案</strong>：實作多格式資料查詢系統，支援 CSV、XML 和 URL 資料來源的篩選 and 查詢，練習讀取與解析 CSV、XML 格式的檔案，並將資料存入資料庫，實作複雜的 SQL 查詢與前端篩選功能。</li></ul>技術棧包含 HTML 結構設計、CSS 樣式美化、JavaScript 互動處理、PHP 後端邏輯、以及 MySQL 資料庫操作。"
+    },
+    "1142_AI-assistedSoftwareDevelopment": {
+        "title": "1142 - 人工智慧輔助軟體開發",
+        "meta": "人工智慧輔助軟體開發<br>`C++ 20`, `Docker`, `CI/CD`",
+        "meta_html": "人工智慧輔助軟體開發 ｜ C++ 20, GTest, Docker, GitHub Actions, CMake",
+        "desc": "應用 AI 輔助軟體開發生命週期，包含需求、設計、測試、CI/CD 與 Docker 部署。實作 Two Sum 演算法與 CSV 查詢引擎。",
+        "longDesc": "這門課程探討如何應用先進的人工智慧技術輔助軟體開發生命週期，包括需求分析、系統設計、測試計畫、自動化 CI/CD 以及容器化部署。專案包含：<ul><li><strong>Project0 - Two Sum</strong>：演算法專案。實作陣列排序與哈希表兩種方法，並進行複雜度分析與 GTest 驗證，設定 Docker 與 GitHub Actions CI。</li><li><strong>ProjectB - CSV Mini Database & Query Engine</strong>：輕量級 CSV 資料庫與查詢引擎。支援高效 CSV 解析（使用 csv-parser）、記憶體雜湊索引，並提供類 SQL 的複合條件（AND, OR）查詢引擎。</li></ul>透過這些專案實作，我深入實踐了軟體工程最佳實務，包含演算法設計與時間複雜度分析、記憶體索引與複合查詢引擎設計、vcpkg 套件管理整合、自動化測試與 CI/CD 流程、Docker 容器化打包部署，以及軟體需求、設計與測試規格書的撰寫。"
     }
 }
 
@@ -181,7 +188,8 @@ MOCK_DATA = [
                 {"name": "1122_WebsiteProgrammingPractice", "url": "https://github.com/tsz7250/1122_WebsiteProgrammingPractice", "description": None, "primaryLanguage": {"name": "HTML"}},
                 {"name": "1122_AssemblyLanguage", "url": "https://github.com/tsz7250/1122_AssemblyLanguage", "description": None, "primaryLanguage": {"name": "Assembly"}},
                 {"name": "1112_ComputerProgramming", "url": "https://github.com/tsz7250/1112_ComputerProgramming", "description": None, "primaryLanguage": {"name": "C++"}},
-                {"name": "1111_WebProgramming", "url": "https://github.com/tsz7250/1111_WebProgramming", "description": None, "primaryLanguage": {"name": "PHP"}}
+                {"name": "1111_WebProgramming", "url": "https://github.com/tsz7250/1111_WebProgramming", "description": None, "primaryLanguage": {"name": "PHP"}},
+                {"name": "1142_AI-assistedSoftwareDevelopment", "url": "https://github.com/tsz7250/1142_AI-assistedSoftwareDevelopment", "description": None, "primaryLanguage": {"name": "C++"}}
             ]
         }
     }
@@ -462,7 +470,7 @@ def main():
             for name, data in METADATA_OVERRIDES.items():
                 is_personal = cat_id == "personal" and name in ["Currency_chart", "yzuCourseBot", "add-subtitles-extended", "Coursio", "n8n-launcher", "ezoe-work_scraper", "bible-tracker"]
                 is_final = cat_id == "final" and name in ["1131_Chatbot_Final", "1122_Web_Final", "1111_WebProgramming_Final"]
-                is_homework = cat_id == "homework" and name in ["1131_Chatbot", "1121_LinearAlgebra", "1122_HDL", "1122_WebsiteProgrammingPractice", "1122_AssemblyLanguage", "1112_ComputerProgramming", "1111_WebProgramming"]
+                is_homework = cat_id == "homework" and name in ["1131_Chatbot", "1121_LinearAlgebra", "1122_HDL", "1122_WebsiteProgrammingPractice", "1122_AssemblyLanguage", "1112_ComputerProgramming", "1111_WebProgramming", "1142_AI-assistedSoftwareDevelopment"]
                 if is_personal or is_final or is_homework:
                     mock_items.append({
                         "name": name,
@@ -486,9 +494,13 @@ def main():
     js_projects_content = generate_js_projects_content(all_projects, base_dir)
     update_file_between_markers(js_path, "// START_PROJECTS_DATA", "// END_PROJECTS_DATA", js_projects_content)
 
-    # 取得最後更新日期並寫入 index.html
-    last_update = get_last_user_commit_date()
-    update_file_between_markers(html_path, "<!-- START_LAST_UPDATE -->", "<!-- END_LAST_UPDATE -->", last_update)
+    # 取得手動與自動更新日期並寫入 index.html
+    last_manual_update = get_last_user_commit_date()
+    from datetime import datetime
+    last_auto_update = datetime.now().strftime("%Y-%m-%d")
+    
+    update_file_between_markers(html_path, "<!-- START_LAST_MANUAL_UPDATE -->", "<!-- END_LAST_MANUAL_UPDATE -->", last_manual_update)
+    update_file_between_markers(html_path, "<!-- START_LAST_AUTO_UPDATE -->", "<!-- END_LAST_AUTO_UPDATE -->", last_auto_update)
 
 if __name__ == "__main__":
     main()
