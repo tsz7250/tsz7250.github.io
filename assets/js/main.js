@@ -341,10 +341,10 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     {
       id: '1142_AI-assistedSoftwareDevelopment',
-      title: '1142_AI-assistedSoftwareDevelopment',
-      longDesc: '此專案為開發展示，詳細內容可前往其 GitHub Repository 進行深入閱讀與暸解。<br><br>想要深入暸解更多，請點擊下方按鈕前往 GitHub 倉庫參閱程式碼與專案細節。',
-      tech: 'C++',
-      image: './assets/img/portfolio/default.svg',
+      title: '1142 - 人工智慧輔助軟體開發',
+      longDesc: '這門課程探討如何應用先進的人工智慧技術輔助軟體開發生命週期，包括需求分析、系統設計、測試計畫、自動化 CI/CD 以及容器化部署。專案包含：<ul><li><strong>Project0 - Two Sum</strong>：演算法專案。實作陣列排序與哈希表兩種方法，並進行複雜度分析與 GTest 驗證，設定 Docker 與 GitHub Actions CI。</li><li><strong>ProjectB - CSV Mini Database & Query Engine</strong>：輕量級 CSV 資料庫與查詢引擎。支援高效 CSV 解析（使用 csv-parser）、記憶體雜湊索引，並提供類 SQL 的複合條件（AND, OR）查詢引擎。</li></ul>透過這些專案實作，我深入實踐了軟體工程最佳實務，包含演算法設計與時間複雜度分析、記憶體索引與複合查詢引擎設計、vcpkg 套件管理整合、自動化測試與 CI/CD 流程、Docker 容器化打包部署，以及軟體需求、設計與測試規格書的撰寫。',
+      tech: '人工智慧輔助軟體開發 ｜ C++ 20, GTest, Docker, GitHub Actions, CMake',
+      image: './assets/img/portfolio/1142_AI-assistedSoftwareDevelopment.png',
       github: 'https://github.com/tsz7250/1142_AI-assistedSoftwareDevelopment'
     }
   ];

@@ -68,7 +68,7 @@
 | **[1122 - 組合語言與計算機組織](https://github.com/tsz7250/1122_AssemblyLanguage)** | 組合語言與計算機組織<br>`RISC-V Assembly` | RISC-V 組合語言實作（排列組合計算、五格姓名學分析、史坦納樹演算法）。 |
 | **[1112 - 程式設計二](https://github.com/tsz7250/1112_ComputerProgramming)** | 程式設計二<br>`C++` | C++ 物件導向專案（Fibonacci、編碼機、Spanning Tree、撲克牌遊戲、多型計算）。 |
 | **[1111 - Web 程式設計](https://github.com/tsz7250/1111_WebProgramming)** | Web 程式設計<br>`HTML`, `PHP`, `JavaScript`, `Google Charts`, `MySQL` | 網頁基礎開發作業（驗證碼系統、CSV/XML 資料處理、Google Charts 折線圖等）。 |
-| **[1142_AI-assistedSoftwareDevelopment](https://github.com/tsz7250/1142_AI-assistedSoftwareDevelopment)** | C++ |  |
+| **[1142 - 人工智慧輔助軟體開發](https://github.com/tsz7250/1142_AI-assistedSoftwareDevelopment)** | 人工智慧輔助軟體開發<br>`C++ 20`, `Docker`, `CI/CD` | 應用 AI 輔助軟體開發生命週期，包含需求、設計、測試、CI/CD 與 Docker 部署。實作 Two Sum 演算法與 CSV 查詢引擎。 |
 <!-- END_HOMEWORK_PROJECTS -->
 
 ---
