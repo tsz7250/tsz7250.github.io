@@ -39,11 +39,11 @@
 | 專案名稱 | 技術棧 | 專案簡介 |
 | :--- | :--- | :--- |
 | **[Currency_chart](https://github.com/tsz7250/Currency_chart)** | Python Flask, Chart.js | 多幣種匯率走勢圖，支援 7/30/90/180 天圖表、幣別搜尋與交換，背景資料自動更新。 |
-| **[yzuCourseBot](https://github.com/tsz7250/yzuCourseBot)** | Python | 元智大學自動選課機器人，針對 Windows 環境進行 Fork 優化版。 |
 | **[add-subtitles-extended](https://github.com/tsz7250/add-subtitles-extended)** | JavaScript (Web Ext) | 瀏覽器字幕插件擴充版，修復原版缺陷並新增簡繁自動轉換功能。 |
-| **[Coursio](https://github.com/tsz7250/Coursio)** | Electron | 基於 WannaClass 框架進行重構與優化的課表查詢與自動選課桌面應用。 |
+| **[yzuCourseBot](https://github.com/tsz7250/yzuCourseBot)** | Python | 元智大學自動選課機器人，針對 Windows 環境進行 Fork 優化版。 |
 | **[n8n-launcher](https://github.com/tsz7250/n8n-launcher)** | Batchfile, Docker | Windows 的 n8n Docker 容器圖形化管理工具，支援一鍵啟動、自動配置、備份與還原。 |
 | **[ezoe-work_scraper](https://github.com/tsz7250/ezoe-work_scraper)** | Python, Scrapy | 書籍抓取與格式化匯出工具，支援批量爬取、簡繁轉換並合成為 DOCX/PDF。 |
+| **[Coursio](https://github.com/tsz7250/Coursio)** | Electron | 基於 WannaClass 框架進行重構與優化的課表查詢與自動選課桌面應用。 |
 | **[bible-tracker](https://github.com/tsz7250/bible-tracker)** | LINE Bot, Google Apps Script | 以 LINE Bot 結合 GAS 打造的讀經進度紀錄應用，支援群組統計與完成度排名。 |
 <!-- END_PERSONAL_PROJECTS -->
 
