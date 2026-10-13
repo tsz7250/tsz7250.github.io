@@ -156,11 +156,11 @@ MOCK_DATA = [
         "items": {
             "nodes": [
                 {"name": "Currency_chart", "url": "https://github.com/tsz7250/Currency_chart", "description": None, "primaryLanguage": {"name": "Python"}},
-                {"name": "yzuCourseBot", "url": "https://github.com/tsz7250/yzuCourseBot", "description": None, "primaryLanguage": {"name": "Python"}},
                 {"name": "add-subtitles-extended", "url": "https://github.com/tsz7250/add-subtitles-extended", "description": None, "primaryLanguage": {"name": "JavaScript"}},
-                {"name": "Coursio", "url": "https://github.com/tsz7250/Coursio", "description": None, "primaryLanguage": {"name": "JavaScript"}},
+                {"name": "yzuCourseBot", "url": "https://github.com/tsz7250/yzuCourseBot", "description": None, "primaryLanguage": {"name": "Python"}},
                 {"name": "n8n-launcher", "url": "https://github.com/tsz7250/n8n-launcher", "description": None, "primaryLanguage": {"name": "Batchfile"}},
                 {"name": "ezoe-work_scraper", "url": "https://github.com/tsz7250/ezoe-work_scraper", "description": None, "primaryLanguage": {"name": "Python"}},
+                {"name": "Coursio", "url": "https://github.com/tsz7250/Coursio", "description": None, "primaryLanguage": {"name": "JavaScript"}},
                 {"name": "bible-tracker", "url": "https://github.com/tsz7250/bible-tracker", "description": None, "primaryLanguage": {"name": "TypeScript"}}
             ]
         }
@@ -256,12 +256,33 @@ def fetch_github_lists(username, token):
 # ---------------------------------------------------------
 # 4. Markdown 表格產生器 (README.md)
 # ---------------------------------------------------------
+UG_PROJECTS = {
+    "1131_Chatbot_Final",
+    "1122_Web_Final",
+    "1111_WebProgramming_Final",
+    "1142_OpenPlatformSoftware_Final",
+    "1131_Chatbot",
+    "1121_LinearAlgebra",
+    "1122_HDL",
+    "1122_WebsiteProgrammingPractice",
+    "1122_AssemblyLanguage",
+    "1112_ComputerProgramming",
+    "1111_WebProgramming",
+    "1142_AI-assistedSoftwareDevelopment",
+}
+
+def get_project_url(item):
+    name = item["name"]
+    if name in UG_PROJECTS:
+        return f"https://github.com/tsz7250/undergrad-archive/tree/main/{name}"
+    return item["url"]
+
 def generate_readme_content(category_id, items):
     if category_id == "personal":
         md = "| 專案名稱 | 技術棧 | 專案簡介 |\n| :--- | :--- | :--- |\n"
         for item in items:
             name = item["name"]
-            url = item["url"]
+            url = get_project_url(item)
             override = METADATA_OVERRIDES.get(name, {})
             title = override.get("title", name)
             meta = override.get("meta", item.get("primaryLanguage", {}).get("name") if item.get("primaryLanguage") else "GitHub Project")
@@ -272,7 +293,7 @@ def generate_readme_content(category_id, items):
         md = "| 專案名稱 | 課程名稱 & 技術棧 | 專案簡介 |\n| :--- | :--- | :--- |\n"
         for item in items:
             name = item["name"]
-            url = item["url"]
+            url = get_project_url(item)
             override = METADATA_OVERRIDES.get(name, {})
             title = override.get("title", name)
             meta = override.get("meta", item.get("primaryLanguage", {}).get("name") if item.get("primaryLanguage") else "GitHub Project")
@@ -283,7 +304,7 @@ def generate_readme_content(category_id, items):
         md = "| 課程名稱 / 專案 | 主要技術棧 | 課程作業與實驗簡介 |\n| :--- | :--- | :--- |\n"
         for item in items:
             name = item["name"]
-            url = item["url"]
+            url = get_project_url(item)
             override = METADATA_OVERRIDES.get(name, {})
             title = override.get("title", name)
             meta = override.get("meta", item.get("primaryLanguage", {}).get("name") if item.get("primaryLanguage") else "GitHub Project")
@@ -299,7 +320,7 @@ def generate_html_content(category_id, items, base_dir=""):
     html = ""
     for idx, item in enumerate(items, 1):
         name = item["name"]
-        url = item["url"]
+        url = get_project_url(item)
         override = METADATA_OVERRIDES.get(name, {})
         title = override.get("title", name)
         
@@ -332,7 +353,7 @@ def generate_js_projects_content(all_items, base_dir=""):
     js = "  const projects = [\n"
     for idx, item in enumerate(all_items):
         name = item["name"]
-        url = item["url"]
+        url = get_project_url(item)
         override = METADATA_OVERRIDES.get(name, {})
         title = override.get("title", name)
         

@@ -51,24 +51,24 @@
 <!-- START_UG_FINAL_PROJECTS -->
 | 專案名稱 | 課程名稱 & 技術棧 | 專案簡介 |
 | :--- | :--- | :--- |
-| **[電影AI助手聊天機器人](https://github.com/tsz7250/1131_Chatbot_Final)** | 微型應用程式設計實務<br>`Line Bot`, `Gemini`, `TMDB API` | 電影多模態 AI 助手，整合智能對話、電影搜尋、圖片識別和字幕翻譯等功能。 |
-| **[卡利西里餐廳訂餐系統](https://github.com/tsz7250/1122_Web_Final)** | 網站程式設計實務<br>`Flask`, `PlotlyJS`, `Gemini`, `Canvas` | 使用 Python Flask 開發的餐廳訂餐系統模擬應用程式，具備數據視覺化與智慧選餐。 |
-| **[隨機選擇器與記帳系統](https://github.com/tsz7250/1111_WebProgramming_Final)** | Web 程式設計<br>`HTML`, `CSS`, `JS`, `PHP`, `MySQL` | 結合食物與餐廳篩選的學餐隨機選擇器，並內建使用者註冊與個人記帳功能。 |
-| **[中華民國智慧財產局專利行政實務智能客服](https://github.com/tsz7250/1142_OpenPlatformSoftware_Final)** | 開放平台軟體<br>`RAG`, `LLM`, `Python` | 基於混合檢索與 LLM 技術之專利問答系統，專為中華民國智慧財產局（TIPO）專利常見問答 (FAQ) 開放資料集打造。 |
+| **[電影AI助手聊天機器人](https://github.com/tsz7250/undergrad-archive/tree/main/1131_Chatbot_Final)** | 微型應用程式設計實務<br>`Line Bot`, `Gemini`, `TMDB API` | 電影多模態 AI 助手，整合智能對話、電影搜尋、圖片識別和字幕翻譯等功能。 |
+| **[卡利西里餐廳訂餐系統](https://github.com/tsz7250/undergrad-archive/tree/main/1122_Web_Final)** | 網站程式設計實務<br>`Flask`, `PlotlyJS`, `Gemini`, `Canvas` | 使用 Python Flask 開發的餐廳訂餐系統模擬應用程式，具備數據視覺化與智慧選餐。 |
+| **[隨機選擇器與記帳系統](https://github.com/tsz7250/undergrad-archive/tree/main/1111_WebProgramming_Final)** | Web 程式設計<br>`HTML`, `CSS`, `JS`, `PHP`, `MySQL` | 結合食物與餐廳篩選的學餐隨機選擇器，並內建使用者註冊與個人記帳功能。 |
+| **[中華民國智慧財產局專利行政實務智能客服](https://github.com/tsz7250/undergrad-archive/tree/main/1142_OpenPlatformSoftware_Final)** | 開放平台軟體<br>`RAG`, `LLM`, `Python` | 基於混合檢索與 LLM 技術之專利問答系統，專為中華民國智慧財產局（TIPO）專利常見問答 (FAQ) 開放資料集打造。 |
 <!-- END_UG_FINAL_PROJECTS -->
 
 ### 📚 3. 大學部課程作業與實驗 (Undergraduate Coursework & Lab Exercises)
 <!-- START_UG_HOMEWORK_PROJECTS -->
 | 課程名稱 / 專案 | 主要技術棧 | 課程作業與實驗簡介 |
 | :--- | :--- | :--- |
-| **[1131 - 微型應用程式設計實務](https://github.com/tsz7250/1131_Chatbot)** | 微型應用程式設計實務<br>`Line Bot`, `Flask`, `Gemini`, `Azure`, `LangChain` | AI 聊天機器人集合（包含網頁聊天室、Line Bot、情感分析、語音轉換、LangChain 等）。 |
-| **[1121 - 線性代數](https://github.com/tsz7250/1121_LinearAlgebra)** | 線性代數<br>`C#`, `C++`, `LINGO` | 線性代數應用（整數線性規劃 ILP、C# 幾何測量系統、點燈遊戲、RREF 計算器）。 |
-| **[1122 - 數位系統實驗（二）](https://github.com/tsz7250/1122_HDL)** | 數位系統實驗（二）<br>`VHDL` | VHDL 數位電路設計（包含 ALU、狀態機、紅綠燈控制等 15 個實驗專案）。 |
-| **[1122 - 網站程式設計實務](https://github.com/tsz7250/1122_WebsiteProgrammingPractice)** | 網站程式設計實務<br>`Flask`, `JavaScript`, `Plotly.js` | 網頁開發作業系列（LLM 聊天機器人、日圓匯率即時視覺化、RPG 小遊戲、亂數選擇器等）。 |
-| **[1122 - 組合語言與計算機組織](https://github.com/tsz7250/1122_AssemblyLanguage)** | 組合語言與計算機組織<br>`RISC-V Assembly` | RISC-V 組合語言實作（排列組合計算、五格姓名學分析、史坦納樹演算法）。 |
-| **[1112 - 程式設計二](https://github.com/tsz7250/1112_ComputerProgramming)** | 程式設計二<br>`C++` | C++ 物件導向專案（Fibonacci、編碼機、Spanning Tree、撲克牌遊戲、多型計算）。 |
-| **[1111 - Web 程式設計](https://github.com/tsz7250/1111_WebProgramming)** | Web 程式設計<br>`HTML`, `PHP`, `JavaScript`, `Google Charts`, `MySQL` | 網頁基礎開發作業（驗證碼系統、CSV/XML 資料處理、Google Charts 折線圖等）。 |
-| **[1142 - 人工智慧輔助軟體開發](https://github.com/tsz7250/1142_AI-assistedSoftwareDevelopment)** | 人工智慧輔助軟體開發<br>`C++ 20`, `Docker`, `CI/CD` | 應用 AI 輔助軟體開發生命週期，包含需求、設計、測試、CI/CD 與 Docker 部署。實作 Two Sum 演算法與 CSV 查詢引擎。 |
+| **[1131 - 微型應用程式設計實務](https://github.com/tsz7250/undergrad-archive/tree/main/1131_Chatbot)** | 微型應用程式設計實務<br>`Line Bot`, `Flask`, `Gemini`, `Azure`, `LangChain` | AI 聊天機器人集合（包含網頁聊天室、Line Bot、情感分析、語音轉換、LangChain 等）。 |
+| **[1121 - 線性代數](https://github.com/tsz7250/undergrad-archive/tree/main/1121_LinearAlgebra)** | 線性代數<br>`C#`, `C++`, `LINGO` | 線性代數應用（整數線性規劃 ILP、C# 幾何測量系統、點燈遊戲、RREF 計算器）。 |
+| **[1122 - 數位系統實驗（二）](https://github.com/tsz7250/undergrad-archive/tree/main/1122_HDL)** | 數位系統實驗（二）<br>`VHDL` | VHDL 數位電路設計（包含 ALU、狀態機、紅綠燈控制等 15 個實驗專案）。 |
+| **[1122 - 網站程式設計實務](https://github.com/tsz7250/undergrad-archive/tree/main/1122_WebsiteProgrammingPractice)** | 網站程式設計實務<br>`Flask`, `JavaScript`, `Plotly.js` | 網頁開發作業系列（LLM 聊天機器人、日圓匯率即時視覺化、RPG 小遊戲、亂數選擇器等）。 |
+| **[1122 - 組合語言與計算機組織](https://github.com/tsz7250/undergrad-archive/tree/main/1122_AssemblyLanguage)** | 組合語言與計算機組織<br>`RISC-V Assembly` | RISC-V 組合語言實作（排列組合計算、五格姓名學分析、史坦納樹演算法）。 |
+| **[1112 - 程式設計二](https://github.com/tsz7250/undergrad-archive/tree/main/1112_ComputerProgramming)** | 程式設計二<br>`C++` | C++ 物件導向專案（Fibonacci、編碼機、Spanning Tree、撲克牌遊戲、多型計算）。 |
+| **[1111 - Web 程式設計](https://github.com/tsz7250/undergrad-archive/tree/main/1111_WebProgramming)** | Web 程式設計<br>`HTML`, `PHP`, `JavaScript`, `Google Charts`, `MySQL` | 網頁基礎開發作業（驗證碼系統、CSV/XML 資料處理、Google Charts 折線圖等）。 |
+| **[1142 - 人工智慧輔助軟體開發](https://github.com/tsz7250/undergrad-archive/tree/main/1142_AI-assistedSoftwareDevelopment)** | 人工智慧輔助軟體開發<br>`C++ 20`, `Docker`, `CI/CD` | 應用 AI 輔助軟體開發生命週期，包含需求、設計、測試、CI/CD 與 Docker 部署。實作 Two Sum 演算法與 CSV 查詢引擎。 |
 <!-- END_UG_HOMEWORK_PROJECTS -->
 
 ### 🎓 4. 研究所期末分組報告 (Postgraduate Final Projects)
