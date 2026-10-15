@@ -8,52 +8,100 @@ import subprocess
 # 1. 專案自訂中文化標題與技術棧描述覆寫表 (Metadata Overrides)
 # ---------------------------------------------------------
 METADATA_OVERRIDES = {
-    # 🚀 1. 個人專案
+    # 🚀 1. 個人專案 (Personal Projects)
     "Currency_chart": {
         "title": "Currency_chart",
+        "category": "personal",
+        "badge": "個人專案",
+        "date": "2025-05",
+        "topics": ["爬蟲自動化", "資料視覺化", "網頁應用"],
+        "tech": ["Python", "Flask", "Playwright", "Chart.js"],
+        "tags": ["爬蟲自動化", "資料視覺化", "網頁應用", "Python", "Flask", "Playwright", "Chart.js"],
         "meta": "Python Flask, Chart.js",
         "desc": "多幣種匯率走勢圖，支援 7/30/90/180 天圖表、幣別搜尋與交換，背景資料自動更新。",
         "longDesc": "這是一個功能完整的匯率追蹤應用程式，使用 Python Flask 框架開發。系統使用 Playwright 和 Chromium 自動化瀏覽器來從 Mastercard 公開服務獲取匯率資料，並在背景自動更新。核心功能包括多時間區間圖表顯示（近 7/30/90/180 天）、幣別搜尋與快速交換介面、歷史記錄查看功能等。首次啟動時會自動檢查並更新匯率數據，如需獲取 Cookies 會自動顯示瀏覽器窗口約 10 秒，整個過程完全自動化。"
     },
     "yzuCourseBot": {
         "title": "yzuCourseBot",
+        "category": "personal",
+        "badge": "個人專案",
+        "date": "2024-09",
+        "topics": ["爬蟲自動化", "桌面應用", "OCR辨識"],
+        "tech": ["Python", "Flet", "CNN"],
+        "tags": ["爬蟲自動化", "桌面應用", "OCR辨識", "Python", "Flet", "CNN"],
         "meta": "Python",
         "desc": "元智大學自動選課機器人，針對 Windows 環境進行 Fork 優化版。",
         "longDesc": "這是一個針對元智大學選課系統開發的自動化工具，基於原始 yzuCourseBot 進行 fork 並針對 Windows 環境進行深度優化。主要改進包括：<ul><li>更新套件相容性以支援 Python 3.12。</li><li>修正 Windows 平台的依賴問題。</li><li>提供完整的 Windows 安裝指南。</li><li>優化執行穩定性。</li><li>新增可執行檔降低使用門檻。</li></ul>專案提供兩種執行方式：使用 Flet 框架開發的 GUI 圖形介面版本，以及傳統的命令列版本。驗證碼識別使用 CNN 模型進行 OCR 識別。我還使用 PyInstaller 將程式打包成 .exe 執行檔，並建立了自動化建置流程。這個專案幫助許多同學在選課期間節省了大量時間。"
     },
     "add-subtitles-extended": {
         "title": "add-subtitles-extended",
+        "category": "personal",
+        "badge": "個人專案",
+        "date": "2024-04",
+        "topics": ["瀏覽器擴充", "多媒體工具"],
+        "tech": ["JavaScript", "Web Ext", "OpenCC"],
+        "tags": ["瀏覽器擴充", "多媒體工具", "JavaScript", "Web Ext", "OpenCC"],
         "meta": "JavaScript (Web Ext)",
         "desc": "瀏覽器字幕插件擴充版，修復原版缺陷並新增簡繁自動轉換功能。",
         "longDesc": "這是一個 Firefox 瀏覽器擴充套件，基於原始 add-subtitles 進行修復及優化。主要功能是為網頁上的任何 video 元素新增外部字幕檔案。我新增了多項功能：<ul><li>支援 ASS/SSA 字幕格式（原本只支援 SRT、VTT）。</li><li>使用 OpenCC-JS 實現自動簡體中文轉繁體中文。</li><li>支援 ZIP 壓縮檔中的字幕（使用 JSZip 函式庫）。</li><li>修復全螢幕播放功能。</li><li>改善外觀設計。</li></ul>同時，我重構了內容腳本注入邏輯，增加錯誤處理與狀態檢查，優化 OpenCC 加載流程，修復了字幕上傳功能。使用者可以調整字幕位置、大小和顏色，並使用鍵盤快捷鍵控制。"
     },
     "Coursio": {
         "title": "Coursio",
+        "category": "personal",
+        "badge": "個人專案",
+        "date": "2024-06",
+        "topics": ["桌面應用", "自動化工具"],
+        "tech": ["Vue 3", "Vite", "Electron", "SQLite"],
+        "tags": ["桌面應用", "自動化工具", "Vue 3", "Vite", "Electron", "SQLite"],
         "meta": "Electron",
         "desc": "基於 WannaClass 框架進行重構與優化的課表查詢與自動選課桌面應用。",
         "longDesc": "本專案參考 Wanna Class 進行架構重構與功能擴充，打造一個現代化的元智大學選課助手。技術架構由原始的 Vanilla JS + jQuery 升級為 Vue 3 + Vite + SCSS，並使用 Electron 封裝為桌面應用程式。主要功能包括：<ul><li><strong>我的課表</strong>：直觀記錄歷年課程，支援匯出功能。</li><li><strong>課程查詢</strong>：快速檢索全校課表，顯示學分、教室及教授等詳細資訊。</li><li><strong>自動選課</strong>：模擬使用者行為進行全自動化搶課，大幅提升成功率。</li><li><strong>成績查詢</strong>：快速檢閱各學期成績紀錄。</li><li><strong>系統設定</strong>：彈性調整重試頻率與登入偏好。</li></ul>專案強調安全性與效能，承諾不紀錄帳號密碼，並優化資源消耗。透過 SQLite3 管理資料並整合 Puppeteer 處理網頁自動化，有效解決了官網操作繁瑣與驗證碼搜尋的痛點。"
     },
     "n8n-launcher": {
         "title": "n8n-launcher",
+        "category": "personal",
+        "badge": "個人專案",
+        "date": "2025-01",
+        "topics": ["DevOps", "系統工具"],
+        "tech": ["Docker", "Batchfile"],
+        "tags": ["DevOps", "系統工具", "Docker", "Batchfile"],
         "meta": "Batchfile, Docker",
         "desc": "Windows 的 n8n Docker 容器圖形化管理工具，支援一鍵啟動、自動配置、備份與還原。",
         "longDesc": "這是一個專為 Windows 系統設計的 n8n Docker 容器管理工具，提供簡單易用的圖形化選單介面來管理 n8n 工作流程自動化平台。主要功能包括：<ul><li><strong>一鍵啟動</strong>：自動檢查並啟動 Docker，無需手動配置。</li><li><strong>自動配置</strong>：首次使用時自動建立 docker-compose.yml 配置檔。</li><li><strong>資料備份</strong>：一鍵備份 n8n 工作流程和 PostgreSQL 資料庫。</li><li><strong>資料還原</strong>：輕鬆還原先前備份的資料。</li><li><strong>重新安裝</strong>：快速重新安裝並可選擇保留資料。</li></ul>工具使用 Batch 腳本開發，整合 Docker Compose 來管理容器生命週期。腳本會自動檢查 Docker Desktop 運行狀態，提供友好的錯誤提示，並在服務就緒後自動開啟瀏覽器。"
     },
     "ezoe-work_scraper": {
         "title": "ezoe-work_scraper",
+        "category": "personal",
+        "badge": "個人專案",
+        "date": "2025-03",
+        "topics": ["爬蟲自動化", "檔案處理"],
+        "tech": ["Python", "BeautifulSoup", "Pandoc"],
+        "tags": ["爬蟲自動化", "檔案處理", "Python", "BeautifulSoup", "Pandoc"],
         "meta": "Python, Scrapy",
         "desc": "書籍抓取與格式化匯出工具，支援批量爬取、簡繁轉換並合成為 DOCX/PDF。",
         "longDesc": "這是一個針對 ezoe.work 網站的文章爬蟲工具，可以批次抓取文章並輸出為格式化的 DOCX 與 PDF 檔案。主要功能包括：<ul><li><strong>批次爬取</strong>：從 urls.txt 或指定 txt 檔案讀取 URL，每篇產生獨立的 Markdown 檔案（書名_篇數.md）。</li><li><strong>合併轉換</strong>：依書名自動合併多篇 Markdown，轉成一本完整的 DOCX 檔案，可設定行距、標題樣式等格式。</li><li><strong>簡轉繁與 PDF</strong>：程式會將 DOCX 以 Microsoft Word 進行簡體轉繁體，並轉成 PDF 檔案。需在 Windows 環境且已安裝 Microsoft Word，否則會略過此步驟。</li><li><strong>一鍵流程</strong>：執行 main.py 可依序完成「爬取 → 轉 DOCX/PDF」的完整流程。</li></ul>技術上使用 Python 開發，整合 BeautifulSoup 進行網頁解析、pypandoc 進行 Markdown 轉 DOCX、pywin32 進行 Word 自動化操作（簡轉繁與 PDF 轉換）。"
     },
     "bible-tracker": {
         "title": "bible-tracker",
+        "category": "personal",
+        "badge": "個人專案",
+        "date": "2025-02",
+        "topics": ["機器人 / Bot", "雲端應用"],
+        "tech": ["TypeScript", "LINE Bot API", "GAS"],
+        "tags": ["機器人 / Bot", "雲端應用", "TypeScript", "LINE Bot API", "GAS"],
         "meta": "LINE Bot, Google Apps Script",
         "desc": "以 LINE Bot 結合 GAS 打造的讀經進度紀錄應用，支援群組統計與完成度排名。",
         "longDesc": "這是一個以 LINE Bot + Google Apps Script (GAS) 打造的聖經與生命讀經進度追蹤應用。系統幫助小組成員記錄每日讀經、自動同步一年讀經計畫與對應的生命讀經篇目，並即時統計群組排名。主要功能包括：<ul><li><strong>多元記錄模式</strong>：支援自由讀經、一年計畫與生命讀經的獨立勾選與智慧同步。</li><li><strong>進度儀表板</strong>：即時視覺化舊約、新約及生命讀經的完成百分比。</li><li><strong>群組互動</strong>：透過 LINE Bot 取得專屬連結，並查看成員間的閱讀比例與即時排名。</li><li><strong>安全與優化</strong>：實作 SHA-256 加密的 PIN 碼驗證，並提供批次儲存邏輯以提升使用者體驗。</li></ul>專案整合了 LINE Messaging API 與 Google Sheets，展現了如何利用雲端工具解決社群協作與個人進度管理的需求。"
     },
-    # 👥 2. 期末分組報告
+    # 🎓 2. 學校專案 - 期末分組報告 (Academic Final Projects)
     "1131_Chatbot_Final": {
         "title": "電影AI助手聊天機器人",
+        "category": "academic",
+        "badge": "學校專案 · 期末",
+        "date": "2025-01",
+        "topics": ["AI / LLM", "機器人 / Bot", "多媒體工具"],
+        "tech": ["Python", "Flask", "Gemini", "LINE Bot API", "TMDB API"],
+        "tags": ["AI / LLM", "機器人 / Bot", "多媒體工具", "Python", "Flask", "Gemini", "LINE Bot API", "TMDB API"],
         "meta": "微型應用程式設計實務<br>`Line Bot`, `Gemini`, `TMDB API`",
         "meta_html": "微型應用程式設計實務 ｜ Line Bot, Gemini, TMDB API",
         "desc": "電影多模態 AI 助手，整合智能對話、電影搜尋、圖片識別和字幕翻譯等功能。",
@@ -61,6 +109,12 @@ METADATA_OVERRIDES = {
     },
     "1122_Web_Final": {
         "title": "卡利西里餐廳訂餐系統",
+        "category": "academic",
+        "badge": "學校專案 · 期末",
+        "date": "2024-06",
+        "topics": ["網頁應用", "資料視覺化", "AI / LLM"],
+        "tech": ["Python", "Flask", "Plotly.js", "Gemini", "Canvas"],
+        "tags": ["網頁應用", "資料視覺化", "AI / LLM", "Python", "Flask", "Plotly.js", "Gemini", "Canvas"],
         "meta": "網站程式設計實務<br>`Flask`, `PlotlyJS`, `Gemini`, `Canvas`",
         "meta_html": "網站程式設計實務 ｜ Flask, PlotlyJS, Gemini",
         "desc": "使用 Python Flask 開發的餐廳訂餐系統模擬應用程式，具備數據視覺化與智慧選餐。",
@@ -68,6 +122,12 @@ METADATA_OVERRIDES = {
     },
     "1111_WebProgramming_Final": {
         "title": "隨機選擇器與記帳系統",
+        "category": "academic",
+        "badge": "學校專案 · 期末",
+        "date": "2023-01",
+        "topics": ["網頁應用", "資料庫系統"],
+        "tech": ["PHP", "MySQL", "JavaScript", "HTML/CSS"],
+        "tags": ["網頁應用", "資料庫系統", "PHP", "MySQL", "JavaScript", "HTML/CSS"],
         "meta": "Web 程式設計<br>`HTML`, `CSS`, `JS`, `PHP`, `MySQL`",
         "meta_html": "Web 程式設計 ｜ HTML, CSS, JS, PHP, MySQL",
         "desc": "結合食物與餐廳篩選的學餐隨機選擇器，並內建使用者註冊與個人記帳功能。",
@@ -75,14 +135,26 @@ METADATA_OVERRIDES = {
     },
     "1142_OpenPlatformSoftware_Final": {
         "title": "中華民國智慧財產局專利行政實務智能客服",
+        "category": "academic",
+        "badge": "學校專案 · 期末",
+        "date": "2025-06",
+        "topics": ["AI / LLM", "機器人 / Bot", "RAG檢索"],
+        "tech": ["Python", "RAG", "LLM", "LINE Bot API"],
+        "tags": ["AI / LLM", "機器人 / Bot", "RAG檢索", "Python", "RAG", "LLM", "LINE Bot API"],
         "meta": "開放平台軟體<br>`RAG`, `LLM`, `Python`",
         "meta_html": "開放平台軟體 ｜ RAG, LLM, Python",
         "desc": "基於混合檢索與 LLM 技術之專利問答系統，專為中華民國智慧財產局（TIPO）專利常見問答 (FAQ) 開放資料集打造。",
         "longDesc": "這是一個專為中華民國智慧財產局（TIPO）專利常見問答 (FAQ) 開放資料集打造的專利問答系統，基於混合檢索與 LLM 技術開發。系統提供以下主要功能與特色：<ul><li><strong>混合檢索架構</strong>：整合關鍵字、BM25 與向量相似度搜尋（Hybrid Search），並搭配 CrossEncoder 進行重排序，大幅提升檢索準確率。</li><li><strong>雙代理機制 (Dual-Agent)</strong>：運用 Agent 1 進行初步回答，Agent 2 進行審查與補充，並內建對齊與覆蓋率救援機制。</li><li><strong>上下文感知與重寫</strong>：自動將使用者的提問進行上下文感知重寫，以提供更精確的檢索結果。</li><li><strong>智慧快取機制</strong>：支援精確比對與模糊比對快取，有效降低 LLM 推論成本與系統回應延遲。</li><li><strong>多端支援與本地部署</strong>：提供 Web UI 與 LINE Bot 雙平台存取，系統經過優化，可在 6GB VRAM（如 RTX 2060）的消費級設備上流暢運行。</li></ul>這個專案展示了如何結合 RAG 架構與多代理系統來解決專業領域的問答需求。"
     },
-    # 📚 3. 課程作業與實驗
+    # 📚 3. 學校專案 - 課程作業與實驗 (Academic Coursework)
     "1131_Chatbot": {
         "title": "1131 - 微型應用程式設計實務",
+        "category": "academic",
+        "badge": "學校專案 · 作業",
+        "date": "2024-11",
+        "topics": ["AI / LLM", "機器人 / Bot"],
+        "tech": ["Python", "Flask", "Gemini", "Azure", "LangChain"],
+        "tags": ["AI / LLM", "機器人 / Bot", "Python", "Flask", "Gemini", "Azure", "LangChain"],
         "meta": "微型應用程式設計實務<br>`Line Bot`, `Flask`, `Gemini`, `Azure`, `LangChain`",
         "meta_html": "微型應用程式設計實務 ｜ Line Bot, Flask, Gemini, Azure, LangChain",
         "desc": "AI 聊天機器人集合（包含網頁聊天室、Line Bot、情感分析、語音轉換、LangChain 等）。",
@@ -91,6 +163,12 @@ METADATA_OVERRIDES = {
     },
     "1121_LinearAlgebra": {
         "title": "1121 - 線性代數",
+        "category": "academic",
+        "badge": "學校專案 · 作業",
+        "date": "2024-01",
+        "topics": ["演算法 / 數學", "桌面應用"],
+        "tech": ["C#", "C++", "LINGO"],
+        "tags": ["演算法 / 數學", "桌面應用", "C#", "C++", "LINGO"],
         "meta": "線性代數<br>`C#`, `C++`, `LINGO`",
         "meta_html": "線性代數 ｜ C#, C++, LINGO",
         "desc": "線性代數應用（整數線性規劃 ILP、C# 幾何測量系統、點燈遊戲、RREF 計算器）。",
@@ -99,6 +177,12 @@ METADATA_OVERRIDES = {
     },
     "1122_HDL": {
         "title": "1122 - 數位系統實驗（二）",
+        "category": "academic",
+        "badge": "學校專案 · 作業",
+        "date": "2024-05",
+        "topics": ["硬體系統 / 電路", "數位實驗"],
+        "tech": ["VHDL", "FPGA", "Quartus"],
+        "tags": ["硬體系統 / 電路", "數位實驗", "VHDL", "FPGA", "Quartus"],
         "meta": "數位系統實驗（二）<br>`VHDL`",
         "meta_html": "數位系統實驗（二） ｜ VHDL",
         "desc": "VHDL 數位電路設計（包含 ALU、狀態機、紅綠燈控制等 15 個實驗專案）。",
@@ -107,6 +191,12 @@ METADATA_OVERRIDES = {
     },
     "1122_WebsiteProgrammingPractice": {
         "title": "1122 - 網站程式設計實務",
+        "category": "academic",
+        "badge": "學校專案 · 作業",
+        "date": "2024-05",
+        "topics": ["網頁應用", "資料視覺化", "AI / LLM"],
+        "tech": ["Python", "Flask", "JavaScript", "Plotly.js", "Gemini"],
+        "tags": ["網頁應用", "資料視覺化", "AI / LLM", "Python", "Flask", "JavaScript", "Plotly.js", "Gemini"],
         "meta": "網站程式設計實務<br>`Flask`, `JavaScript`, `Plotly.js`",
         "meta_html": "網站程式設計實務 ｜ Flask, JavaScript, Plotly.js",
         "desc": "網頁開發作業系列（LLM 聊天機器人、日圓匯率即時視覺化、RPG 小遊戲、亂數選擇器等）。",
@@ -115,6 +205,12 @@ METADATA_OVERRIDES = {
     },
     "1122_AssemblyLanguage": {
         "title": "1122 - 組合語言與計算機組織",
+        "category": "academic",
+        "badge": "學校專案 · 作業",
+        "date": "2024-04",
+        "topics": ["底層系統", "演算法 / 數學"],
+        "tech": ["RISC-V", "Assembly"],
+        "tags": ["底層系統", "演算法 / 數學", "RISC-V", "Assembly"],
         "meta": "組合語言與計算機組織<br>`RISC-V Assembly`",
         "meta_html": "組合語言與計算機組織 ｜ RISC-V Assembly",
         "desc": "RISC-V 組合語言實作（排列組合計算、五格姓名學分析、史坦納樹演算法）。",
@@ -123,6 +219,12 @@ METADATA_OVERRIDES = {
     },
     "1112_ComputerProgramming": {
         "title": "1112 - 程式設計二",
+        "category": "academic",
+        "badge": "學校專案 · 作業",
+        "date": "2023-06",
+        "topics": ["軟體工程", "演算法 / 數學"],
+        "tech": ["C++", "OOP"],
+        "tags": ["軟體工程", "演算法 / 數學", "C++", "OOP"],
         "meta": "程式設計二<br>`C++`",
         "meta_html": "程式設計二 ｜ C++",
         "desc": "C++ 物件導向專案（Fibonacci、編碼機、Spanning Tree、撲克牌遊戲、多型計算）。",
@@ -131,6 +233,12 @@ METADATA_OVERRIDES = {
     },
     "1111_WebProgramming": {
         "title": "1111 - Web 程式設計",
+        "category": "academic",
+        "badge": "學校專案 · 作業",
+        "date": "2022-11",
+        "topics": ["網頁應用", "資料視覺化"],
+        "tech": ["PHP", "MySQL", "JavaScript", "Google Charts"],
+        "tags": ["網頁應用", "資料視覺化", "PHP", "MySQL", "JavaScript", "Google Charts"],
         "meta": "Web 程式設計<br>`HTML`, `PHP`, `JavaScript`, `Google Charts`, `MySQL`",
         "meta_html": "Web 程式設計 ｜ HTML, PHP, JavaScript, Google Charts, MySQL",
         "desc": "網頁基礎開發作業（驗證碼系統、CSV/XML 資料處理、Google Charts 折線圖等）。",
@@ -139,6 +247,12 @@ METADATA_OVERRIDES = {
     },
     "1142_AI-assistedSoftwareDevelopment": {
         "title": "1142 - 人工智慧輔助軟體開發",
+        "category": "academic",
+        "badge": "學校專案 · 作業",
+        "date": "2025-06",
+        "topics": ["軟體工程", "DevOps", "AI / LLM"],
+        "tech": ["C++", "Docker", "GTest", "CI/CD", "CMake"],
+        "tags": ["軟體工程", "DevOps", "AI / LLM", "C++", "Docker", "GTest", "CI/CD", "CMake"],
         "meta": "人工智慧輔助軟體開發<br>`C++ 20`, `Docker`, `CI/CD`",
         "meta_html": "人工智慧輔助軟體開發 ｜ C++ 20, GTest, Docker, GitHub Actions, CMake",
         "desc": "應用 AI 輔助軟體開發生命週期，包含需求、設計、測試、CI/CD 與 Docker 部署。實作 Two Sum 演算法與 CSV 查詢引擎。",
@@ -166,45 +280,31 @@ MOCK_DATA = [
         }
     },
     {
-        "name": "UG-Final Projects",
+        "name": "Academic Final Projects",
         "slug": "ug-final-projects",
         "items": {
             "nodes": [
-                {"name": "1131_Chatbot_Final", "url": "https://github.com/tsz7250/1131_Chatbot_Final", "description": None, "primaryLanguage": {"name": "Python"}},
-                {"name": "1122_Web_Final", "url": "https://github.com/tsz7250/1122_Web_Final", "description": None, "primaryLanguage": {"name": "Python"}},
-                {"name": "1111_WebProgramming_Final", "url": "https://github.com/tsz7250/1111_WebProgramming_Final", "description": None, "primaryLanguage": {"name": "PHP"}},
-                {"name": "1142_OpenPlatformSoftware_Final", "url": "https://github.com/tsz7250/1142_OpenPlatformSoftware_Final", "description": None, "primaryLanguage": {"name": "Python"}}
+                {"name": "1131_Chatbot_Final", "url": "https://github.com/tsz7250/undergrad-archive/tree/main/1131_Chatbot_Final", "description": None, "primaryLanguage": {"name": "Python"}},
+                {"name": "1122_Web_Final", "url": "https://github.com/tsz7250/undergrad-archive/tree/main/1122_Web_Final", "description": None, "primaryLanguage": {"name": "Python"}},
+                {"name": "1111_WebProgramming_Final", "url": "https://github.com/tsz7250/undergrad-archive/tree/main/1111_WebProgramming_Final", "description": None, "primaryLanguage": {"name": "PHP"}},
+                {"name": "1142_OpenPlatformSoftware_Final", "url": "https://github.com/tsz7250/undergrad-archive/tree/main/1142_OpenPlatformSoftware_Final", "description": None, "primaryLanguage": {"name": "Python"}}
             ]
         }
     },
     {
-        "name": "UG-Homeworks",
+        "name": "Academic Coursework",
         "slug": "ug-homeworks",
         "items": {
             "nodes": [
-                {"name": "1131_Chatbot", "url": "https://github.com/tsz7250/1131_Chatbot", "description": None, "primaryLanguage": {"name": "Python"}},
-                {"name": "1121_LinearAlgebra", "url": "https://github.com/tsz7250/1121_LinearAlgebra", "description": None, "primaryLanguage": {"name": "C#"}},
-                {"name": "1122_HDL", "url": "https://github.com/tsz7250/1122_HDL", "description": None, "primaryLanguage": {"name": "VHDL"}},
-                {"name": "1122_WebsiteProgrammingPractice", "url": "https://github.com/tsz7250/1122_WebsiteProgrammingPractice", "description": None, "primaryLanguage": {"name": "HTML"}},
-                {"name": "1122_AssemblyLanguage", "url": "https://github.com/tsz7250/1122_AssemblyLanguage", "description": None, "primaryLanguage": {"name": "Assembly"}},
-                {"name": "1112_ComputerProgramming", "url": "https://github.com/tsz7250/1112_ComputerProgramming", "description": None, "primaryLanguage": {"name": "C++"}},
-                {"name": "1111_WebProgramming", "url": "https://github.com/tsz7250/1111_WebProgramming", "description": None, "primaryLanguage": {"name": "PHP"}},
-                {"name": "1142_AI-assistedSoftwareDevelopment", "url": "https://github.com/tsz7250/1142_AI-assistedSoftwareDevelopment", "description": None, "primaryLanguage": {"name": "C++"}}
+                {"name": "1131_Chatbot", "url": "https://github.com/tsz7250/undergrad-archive/tree/main/1131_Chatbot", "description": None, "primaryLanguage": {"name": "Python"}},
+                {"name": "1121_LinearAlgebra", "url": "https://github.com/tsz7250/undergrad-archive/tree/main/1121_LinearAlgebra", "description": None, "primaryLanguage": {"name": "C#"}},
+                {"name": "1122_HDL", "url": "https://github.com/tsz7250/undergrad-archive/tree/main/1122_HDL", "description": None, "primaryLanguage": {"name": "VHDL"}},
+                {"name": "1122_WebsiteProgrammingPractice", "url": "https://github.com/tsz7250/undergrad-archive/tree/main/1122_WebsiteProgrammingPractice", "description": None, "primaryLanguage": {"name": "HTML"}},
+                {"name": "1122_AssemblyLanguage", "url": "https://github.com/tsz7250/undergrad-archive/tree/main/1122_AssemblyLanguage", "description": None, "primaryLanguage": {"name": "Assembly"}},
+                {"name": "1112_ComputerProgramming", "url": "https://github.com/tsz7250/undergrad-archive/tree/main/1112_ComputerProgramming", "description": None, "primaryLanguage": {"name": "C++"}},
+                {"name": "1111_WebProgramming", "url": "https://github.com/tsz7250/undergrad-archive/tree/main/1111_WebProgramming", "description": None, "primaryLanguage": {"name": "PHP"}},
+                {"name": "1142_AI-assistedSoftwareDevelopment", "url": "https://github.com/tsz7250/undergrad-archive/tree/main/1142_AI-assistedSoftwareDevelopment", "description": None, "primaryLanguage": {"name": "C++"}}
             ]
-        }
-    },
-    {
-        "name": "PG-Final Projects",
-        "slug": "pg-final-projects",
-        "items": {
-            "nodes": []
-        }
-    },
-    {
-        "name": "PG-Homeworks",
-        "slug": "pg-homeworks",
-        "items": {
-            "nodes": []
         }
     }
 ]
@@ -253,74 +353,58 @@ def fetch_github_lists(username, token):
     else:
         raise Exception(f"API 請求失敗，狀態碼: {response.status_code}, 內容: {response.text}")
 
-# ---------------------------------------------------------
-# 4. Markdown 表格產生器 (README.md)
-# ---------------------------------------------------------
-def generate_readme_content(category_id, items):
-    if category_id == "personal":
-        md = "| 專案名稱 | 技術棧 | 專案簡介 |\n| :--- | :--- | :--- |\n"
-        for item in items:
-            name = item["name"]
-            url = item["url"]
-            override = METADATA_OVERRIDES.get(name, {})
-            title = override.get("title", name)
-            meta = override.get("meta", item.get("primaryLanguage", {}).get("name") if item.get("primaryLanguage") else "GitHub Project")
-            desc = override.get("desc", item.get("description") or "")
-            md += f"| **[{title}]({url})** | {meta} | {desc} |\n"
-        return md
-    elif category_id in ["ug-final", "pg-final"]:
-        md = "| 專案名稱 | 課程名稱 & 技術棧 | 專案簡介 |\n| :--- | :--- | :--- |\n"
-        for item in items:
-            name = item["name"]
-            url = item["url"]
-            override = METADATA_OVERRIDES.get(name, {})
-            title = override.get("title", name)
-            meta = override.get("meta", item.get("primaryLanguage", {}).get("name") if item.get("primaryLanguage") else "GitHub Project")
-            desc = override.get("desc", item.get("description") or "")
-            md += f"| **[{title}]({url})** | {meta} | {desc} |\n"
-        return md
-    elif category_id in ["ug-homework", "pg-homework"]:
-        md = "| 課程名稱 / 專案 | 主要技術棧 | 課程作業與實驗簡介 |\n| :--- | :--- | :--- |\n"
-        for item in items:
-            name = item["name"]
-            url = item["url"]
-            override = METADATA_OVERRIDES.get(name, {})
-            title = override.get("title", name)
-            meta = override.get("meta", item.get("primaryLanguage", {}).get("name") if item.get("primaryLanguage") else "GitHub Project")
-            desc = override.get("desc", item.get("description") or "")
-            md += f"| **[{title}]({url})** | {meta} | {desc} |\n"
-        return md
-    return ""
 
 # ---------------------------------------------------------
-# 5. HTML 卡片產生器 (index.html)
+# 5. Trip.com 橫向長卡片 HTML 產生器 (index.html)
 # ---------------------------------------------------------
-def generate_html_content(category_id, items, base_dir=""):
+def generate_trip_cards_html(items, base_dir=""):
     html = ""
     for idx, item in enumerate(items, 1):
         name = item["name"]
         url = item["url"]
         override = METADATA_OVERRIDES.get(name, {})
         title = override.get("title", name)
-        
-        meta = override.get("meta_html", override.get("meta", item.get("primaryLanguage", {}).get("name") if item.get("primaryLanguage") else "GitHub Project"))
+        category = override.get("category", "personal")
+        badge = override.get("badge", "個人專案")
+        date_str = override.get("date", "2024-01")
+        topics = override.get("topics", ["個人開發" if category == "personal" else "課程專案"])
+        tech = override.get("tech", [item.get("primaryLanguage", {}).get("name") if item.get("primaryLanguage") else "GitHub"])
         desc = override.get("desc_html", override.get("desc", item.get("description") or ""))
         
-        # 偵測本地圖片是否存在，無則 fallback 向量占位圖 default.svg
+        topics_str = ",".join(topics)
+        tech_str = ",".join(tech)
+        
+        topics_html = "".join([f'<span class="trip-card__tag trip-card__tag--topic">{t}</span>' for t in topics])
+        tech_html = "".join([f'<span class="trip-card__tag trip-card__tag--tech">{t}</span>' for t in tech])
+
+        # 偵測本地圖片是否存在
         img_local_path = os.path.join(base_dir, "assets", "img", "portfolio", f"{name}.png")
         if os.path.exists(img_local_path):
             img_src = f"./assets/img/portfolio/{name}.png"
         else:
             img_src = "./assets/img/portfolio/default.svg"
-        
+
         html += f"""          <!-- Card {idx}: {name} -->
-          <article class="project-card" data-project-id="{name}">
-            <img class="project-card__image" src="{img_src}" alt="{name}" />
-            <div class="project-card__content">
-              <h3 class="project-card__title">{title}</h3>
-              <p class="project-card__desc">{desc}</p>
-              <p class="project-card__meta">{meta}</p>
-              <a href="{url}" class="project-card__btn">GitHub →</a>
+          <article class="trip-card" data-project-id="{name}" data-category="{category}" data-date="{date_str}" data-topics="{topics_str}" data-tech="{tech_str}" data-title="{title}">
+            <div class="trip-card__media">
+              <img class="trip-card__image" src="{img_src}" alt="{name}" loading="lazy" />
+              <span class="trip-card__badge trip-card__badge--{category}">{badge}</span>
+            </div>
+            <div class="trip-card__body">
+              <div class="trip-card__header">
+                <h3 class="trip-card__title">{title}</h3>
+                <span class="trip-card__date">{date_str}</span>
+              </div>
+              <p class="trip-card__desc">{desc}</p>
+              <div class="trip-card__footer">
+                <div class="trip-card__tags">
+                  {topics_html}{tech_html}
+                </div>
+                <div class="trip-card__actions">
+                  <button type="button" class="trip-card__btn-detail" data-project-id="{name}">查看詳情</button>
+                  <a href="{url}" class="trip-card__btn-github" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                </div>
+              </div>
             </div>
           </article>\n"""
     return html
@@ -335,21 +419,28 @@ def generate_js_projects_content(all_items, base_dir=""):
         url = item["url"]
         override = METADATA_OVERRIDES.get(name, {})
         title = override.get("title", name)
+        category = override.get("category", "personal")
+        badge = override.get("badge", "個人專案")
+        date_str = override.get("date", "2024-01")
+        topics = override.get("topics", ["個人開發" if category == "personal" else "課程專案"])
+        tech = override.get("tech", [item.get("primaryLanguage", {}).get("name") if item.get("primaryLanguage") else "GitHub"])
+        tags = override.get("tags", topics + tech)
         
-        # 偵測本地圖片是否存在
+        topics_js = json.dumps(topics, ensure_ascii=False)
+        tech_js = json.dumps(tech, ensure_ascii=False)
+        tags_js = json.dumps(tags, ensure_ascii=False)
+        
         img_local_path = os.path.join(base_dir, "assets", "img", "portfolio", f"{name}.png")
         if os.path.exists(img_local_path):
             img_src = f"./assets/img/portfolio/{name}.png"
         else:
             img_src = "./assets/img/portfolio/default.svg"
             
-        # 詳細長描述處理
         long_desc = override.get("longDesc")
         if not long_desc:
             desc_text = override.get("desc", item.get("description") or "此專案為開發展示，詳細內容可前往其 GitHub Repository 進行深入閱讀與暸解。")
             long_desc = f"{desc_text}<br><br>想要深入暸解更多，請點擊下方按鈕前往 GitHub 倉庫參閱程式碼與專案細節。"
             
-        # JS 安全轉義字元
         long_desc_js = long_desc.replace("'", "\\'").replace("\n", "\\n").replace("\r", "")
         title_js = title.replace("'", "\\'")
         
@@ -359,6 +450,12 @@ def generate_js_projects_content(all_items, base_dir=""):
         js += f"""    {{
       id: '{name}',
       title: '{title_js}',
+      category: '{category}',
+      badge: '{badge}',
+      date: '{date_str}',
+      topics: {topics_js},
+      techStack: {tech_js},
+      tags: {tags_js},
       longDesc: '{long_desc_js}',
       tech: '{meta_js}',
       image: '{img_src}',
@@ -389,7 +486,6 @@ def update_file_between_markers(file_path, start_marker, end_marker, new_content
         print(f"[警告] 在 {file_path} 中找不到標記 {start_marker} 或 {end_marker}")
         return False
         
-    # 置換中間區塊，並保留標籤
     new_file_content = (
         content[:start_idx + len(start_marker)] +
         "\n" + new_content.rstrip() + "\n" +
@@ -406,7 +502,6 @@ def update_file_between_markers(file_path, start_marker, end_marker, new_content
 # ---------------------------------------------------------
 def get_last_user_commit_date():
     try:
-        # 排除包含 "Auto-update" 的 Commit，取得最近一次手動 Commit 的日期 (%as 格式為 YYYY-MM-DD)
         date = subprocess.check_output(
             ["git", "log", "-1", "--invert-grep", "--grep=Auto-update", "--format=%as"],
             text=True
@@ -424,7 +519,7 @@ def main():
     username = "tsz7250"
     token = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
     
-    # 決定資料來源：API 抓取或本地 Mock 資料
+    # 決定資料來源
     if token:
         print("[資訊] 偵測到 GitHub Token，開始從 API 取得動態 List 資料...")
         try:
@@ -434,85 +529,79 @@ def main():
             print("[資訊] 將自動切換至 Mock 測試模式...")
             lists = MOCK_DATA
     else:
-        print("[資訊] 未偵測到 GH_TOKEN。啟用本地 MOCK 模式，載入預設專案資料以供格式測試。")
+        print("[資訊] 未偵測到 GH_TOKEN。啟用本地 MOCK 模式，載入預設專案資料。")
         lists = MOCK_DATA
 
-    # 分類映射配置
+    # 分類映射配置 (個人專案與學校專案)
     categories = {
-        "personal": {"slug": "side-projects", "readme_tag": ("<!-- START_PERSONAL_PROJECTS -->", "<!-- END_PERSONAL_PROJECTS -->"), "html_tag": ("<!-- START_PERSONAL_PROJECTS -->", "<!-- END_PERSONAL_PROJECTS -->"), "items": []},
-        "ug-final": {"slug": "ug-final-projects", "readme_tag": ("<!-- START_UG_FINAL_PROJECTS -->", "<!-- END_UG_FINAL_PROJECTS -->"), "html_tag": ("<!-- START_UG_FINAL_PROJECTS -->", "<!-- END_UG_FINAL_PROJECTS -->"), "items": []},
-        "ug-homework": {"slug": "ug-homeworks", "readme_tag": ("<!-- START_UG_HOMEWORK_PROJECTS -->", "<!-- END_UG_HOMEWORK_PROJECTS -->"), "html_tag": ("<!-- START_UG_HOMEWORK_PROJECTS -->", "<!-- END_UG_HOMEWORK_PROJECTS -->"), "items": []},
-        "pg-final": {"slug": "pg-final-projects", "readme_tag": ("<!-- START_PG_FINAL_PROJECTS -->", "<!-- END_PG_FINAL_PROJECTS -->"), "html_tag": ("<!-- START_PG_FINAL_PROJECTS -->", "<!-- END_PG_FINAL_PROJECTS -->"), "items": []},
-        "pg-homework": {"slug": "pg-homeworks", "readme_tag": ("<!-- START_PG_HOMEWORK_PROJECTS -->", "<!-- END_PG_HOMEWORK_PROJECTS -->"), "html_tag": ("<!-- START_PG_HOMEWORK_PROJECTS -->", "<!-- END_PG_HOMEWORK_PROJECTS -->"), "items": []}
+        "personal": {"slug": "side-projects", "items": []},
+        "academic-final": {"slug": "ug-final-projects", "items": []},
+        "academic-homework": {"slug": "ug-homeworks", "items": []}
     }
 
-    # 將抓取回來的 lists 進行分類歸檔
+    # 歸檔
     for node in lists:
         slug = node.get("slug", "").lower()
         items = node.get("items", {}).get("nodes", [])
-        
-        matched = False
         for cat_id, cfg in categories.items():
             if slug == cfg["slug"]:
                 cfg["items"] = items
-                matched = True
-                print(f"[分類] GitHub List '{node['name']}' 已成功歸類至 {cat_id}")
                 break
-        if not matched:
-            print(f"[略過] GitHub List '{node['name']}' (slug: {slug}) 不符合篩選條件，已跳過。")
 
-    # 偵測運行的根目錄路徑
+    # 偵測根目錄路徑
     base_dir = ""
     readme_path = "README.md"
     html_path = "index.html"
     js_path = "assets/js/main.js"
 
-    # 若於 Action 環境，工作目錄可能需做定位
     if not os.path.exists(readme_path) and os.path.exists("../README.md"):
         base_dir = ".."
         readme_path = "../README.md"
         html_path = "../index.html"
         js_path = "../assets/js/main.js"
 
-    # 收集所有的專案，用於更新 JS 陣列
-    all_projects = []
+    # 若無 API 抓取到的清單，從 METADATA_OVERRIDES 還原 Mock
+    personal_items = categories["personal"]["items"]
+    academic_final_items = categories["academic-final"]["items"]
+    academic_hw_items = categories["academic-homework"]["items"]
 
-    # 執行檔案同步
-    for cat_id, cfg in categories.items():
-        if not cfg["items"]:
-            # 如果沒有對應的 list 資料，就保持原本的 override 靜態對應
-            print(f"[警告] 沒有找到歸屬 {cat_id} 的 GitHub List 資料，將使用 METADATA_OVERRIDES 進行 Mock 還原...")
-            mock_items = []
-            for name, data in METADATA_OVERRIDES.items():
-                is_personal = cat_id == "personal" and name in ["Currency_chart", "yzuCourseBot", "add-subtitles-extended", "Coursio", "n8n-launcher", "ezoe-work_scraper", "bible-tracker"]
-                is_ug_final = cat_id == "ug-final" and name in ["1131_Chatbot_Final", "1122_Web_Final", "1111_WebProgramming_Final", "1142_OpenPlatformSoftware_Final"]
-                is_ug_homework = cat_id == "ug-homework" and name in ["1131_Chatbot", "1121_LinearAlgebra", "1122_HDL", "1122_WebsiteProgrammingPractice", "1122_AssemblyLanguage", "1112_ComputerProgramming", "1111_WebProgramming", "1142_AI-assistedSoftwareDevelopment"]
-                is_pg_final = cat_id == "pg-final" and name in []
-                is_pg_homework = cat_id == "pg-homework" and name in []
-                if is_personal or is_ug_final or is_ug_homework or is_pg_final or is_pg_homework:
-                    mock_items.append({
-                        "name": name,
-                        "url": f"https://github.com/tsz7250/{name}",
-                        "description": None,
-                        "primaryLanguage": None
-                    })
-            cfg["items"] = mock_items
+    if not personal_items:
+        personal_items = [
+            {"name": k, "url": f"https://github.com/tsz7250/{k}", "description": None, "primaryLanguage": None}
+            for k, v in METADATA_OVERRIDES.items() if v.get("category") == "personal"
+        ]
 
-        all_projects.extend(cfg["items"])
+    # 確保學校專案的 URL 全面正確指向 undergrad-archive 子資料夾
+    if not academic_final_items:
+        academic_final_items = [
+            {"name": k, "url": f"https://github.com/tsz7250/undergrad-archive/tree/main/{k}", "description": None, "primaryLanguage": None}
+            for k, v in METADATA_OVERRIDES.items() if v.get("badge") == "學校專案 · 期末"
+        ]
+    else:
+        for item in academic_final_items:
+            item["url"] = f"https://github.com/tsz7250/undergrad-archive/tree/main/{item['name']}"
 
-        # 產生並更新 README.md
-        readme_content = generate_readme_content(cat_id, cfg["items"])
-        update_file_between_markers(readme_path, cfg["readme_tag"][0], cfg["readme_tag"][1], readme_content)
+    if not academic_hw_items:
+        academic_hw_items = [
+            {"name": k, "url": f"https://github.com/tsz7250/undergrad-archive/tree/main/{k}", "description": None, "primaryLanguage": None}
+            for k, v in METADATA_OVERRIDES.items() if v.get("badge") == "學校專案 · 作業"
+        ]
+    else:
+        for item in academic_hw_items:
+            item["url"] = f"https://github.com/tsz7250/undergrad-archive/tree/main/{item['name']}"
 
-        # 產生並更新 index.html
-        html_content = generate_html_content(cat_id, cfg["items"], base_dir)
-        update_file_between_markers(html_path, cfg["html_tag"][0], cfg["html_tag"][1], html_content)
+    academic_items = academic_final_items + academic_hw_items
+    all_projects = personal_items + academic_items
 
-    # 產生並更新 assets/js/main.js 中的 projects 陣列
+    # 1. 更新 index.html 中的專案清單
+    trip_cards_html = generate_trip_cards_html(all_projects, base_dir)
+    update_file_between_markers(html_path, "<!-- START_PROJECTS_LIST -->", "<!-- END_PROJECTS_LIST -->", trip_cards_html)
+
+    # 3. 更新 assets/js/main.js 中的 projects 陣列
     js_projects_content = generate_js_projects_content(all_projects, base_dir)
     update_file_between_markers(js_path, "// START_PROJECTS_DATA", "// END_PROJECTS_DATA", js_projects_content)
 
-    # 取得手動與自動更新日期並寫入 index.html
+    # 4. 更新日期
     last_manual_update = get_last_user_commit_date()
     from datetime import datetime
     last_auto_update = datetime.now().strftime("%Y-%m-%d")
