@@ -31,4 +31,3 @@ python scripts/update_portfolio.py
 這將會自動且安全地更新以下三個檔案的標記區間：
 *   [index.html](file:///h:/GitFiles/tsz7250.github.io/index.html) ：更新專案卡片 HTML。
 *   [main.js](file:///h:/GitFiles/tsz7250.github.io/assets/js/main.js) ：更新彈窗資料陣列 `projects`。
-*   [README.md](file:///h:/GitFiles/tsz7250.github.io/README.md) ：更新專案列表表格。
