@@ -604,34 +604,6 @@ document.addEventListener('DOMContentLoaded', () => {
       github: 'https://github.com/tsz7250/yzuCourseBot'
     },
     {
-      id: 'add-subtitles-extended',
-      title: 'add-subtitles-extended',
-      category: 'personal',
-      badge: '個人專案',
-      date: '2024-04',
-      topics: ["瀏覽器擴充", "多媒體工具"],
-      techStack: ["JavaScript", "Web Ext", "OpenCC"],
-      tags: ["瀏覽器擴充", "多媒體工具", "JavaScript", "Web Ext", "OpenCC"],
-      longDesc: '這是一個 Firefox 瀏覽器擴充套件，基於原始 add-subtitles 進行修復及優化。主要功能是為網頁上的任何 video 元素新增外部字幕檔案。我新增了多項功能：<ul><li>支援 ASS/SSA 字幕格式（原本只支援 SRT、VTT）。</li><li>使用 OpenCC-JS 實現自動簡體中文轉繁體中文。</li><li>支援 ZIP 壓縮檔中的字幕（使用 JSZip 函式庫）。</li><li>修復全螢幕播放功能。</li><li>改善外觀設計。</li></ul>同時，我重構了內容腳本注入邏輯，增加錯誤處理與狀態檢查，優化 OpenCC 加載流程，修復了字幕上傳功能。使用者可以調整字幕位置、大小和顏色，並使用鍵盤快捷鍵控制。',
-      tech: 'JavaScript (Web Ext)',
-      image: './assets/img/portfolio/add-subtitles-extended.png',
-      github: 'https://github.com/tsz7250/add-subtitles-extended'
-    },
-    {
-      id: 'Coursio',
-      title: 'Coursio',
-      category: 'personal',
-      badge: '個人專案',
-      date: '2024-06',
-      topics: ["桌面應用", "自動化工具"],
-      techStack: ["Vue 3", "Vite", "Electron", "SQLite"],
-      tags: ["桌面應用", "自動化工具", "Vue 3", "Vite", "Electron", "SQLite"],
-      longDesc: '本專案參考 Wanna Class 進行架構重構與功能擴充，打造一個現代化的元智大學選課助手。技術架構由原始的 Vanilla JS + jQuery 升級為 Vue 3 + Vite + SCSS，並使用 Electron 封裝為桌面應用程式。主要功能包括：<ul><li><strong>我的課表</strong>：直觀記錄歷年課程，支援匯出功能。</li><li><strong>課程查詢</strong>：快速檢索全校課表，顯示學分、教室及教授等詳細資訊。</li><li><strong>自動選課</strong>：模擬使用者行為進行全自動化搶課，大幅提升成功率。</li><li><strong>成績查詢</strong>：快速檢閱各學期成績紀錄。</li><li><strong>系統設定</strong>：彈性調整重試頻率與登入偏好。</li></ul>專案強調安全性與效能，承諾不紀錄帳號密碼，並優化資源消耗。透過 SQLite3 管理資料並整合 Puppeteer 處理網頁自動化，有效解決了官網操作繁瑣與驗證碼搜尋的痛點。',
-      tech: 'Electron',
-      image: './assets/img/portfolio/Coursio.png',
-      github: 'https://github.com/tsz7250/Coursio'
-    },
-    {
       id: 'n8n-launcher',
       title: 'n8n-launcher',
       category: 'personal',
@@ -658,6 +630,20 @@ document.addEventListener('DOMContentLoaded', () => {
       tech: 'Python, Scrapy',
       image: './assets/img/portfolio/ezoe-work_scraper.png',
       github: 'https://github.com/tsz7250/ezoe-work_scraper'
+    },
+    {
+      id: 'Coursio',
+      title: 'Coursio',
+      category: 'personal',
+      badge: '個人專案',
+      date: '2024-06',
+      topics: ["桌面應用", "自動化工具"],
+      techStack: ["Vue 3", "Vite", "Electron", "SQLite"],
+      tags: ["桌面應用", "自動化工具", "Vue 3", "Vite", "Electron", "SQLite"],
+      longDesc: '本專案參考 Wanna Class 進行架構重構與功能擴充，打造一個現代化的元智大學選課助手。技術架構由原始的 Vanilla JS + jQuery 升級為 Vue 3 + Vite + SCSS，並使用 Electron 封裝為桌面應用程式。主要功能包括：<ul><li><strong>我的課表</strong>：直觀記錄歷年課程，支援匯出功能。</li><li><strong>課程查詢</strong>：快速檢索全校課表，顯示學分、教室及教授等詳細資訊。</li><li><strong>自動選課</strong>：模擬使用者行為進行全自動化搶課，大幅提升成功率。</li><li><strong>成績查詢</strong>：快速檢閱各學期成績紀錄。</li><li><strong>系統設定</strong>：彈性調整重試頻率與登入偏好。</li></ul>專案強調安全性與效能，承諾不紀錄帳號密碼，並優化資源消耗。透過 SQLite3 管理資料並整合 Puppeteer 處理網頁自動化，有效解決了官網操作繁瑣與驗證碼搜尋的痛點。',
+      tech: 'Electron',
+      image: './assets/img/portfolio/Coursio.png',
+      github: 'https://github.com/tsz7250/Coursio'
     },
     {
       id: 'bible-tracker',
