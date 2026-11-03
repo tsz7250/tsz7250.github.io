@@ -660,6 +660,34 @@ document.addEventListener('DOMContentLoaded', () => {
       github: 'https://github.com/tsz7250/bible-tracker'
     },
     {
+      id: 'Netflix-Ratings',
+      title: 'Netflix-Ratings',
+      category: 'personal',
+      badge: '個人專案',
+      date: '2024-01',
+      topics: ["個人開發"],
+      techStack: ["TypeScript"],
+      tags: ["個人開發", "TypeScript"],
+      longDesc: 'Displays IMDb, Rotten Tomatoes, Metacritic, Trakt, TMDb, and Letterboxd ratings directly on the Netflix web interface.<br><br>想要深入暸解更多，請點擊下方按鈕前往 GitHub 倉庫參閱程式碼與專案細節。',
+      tech: 'TypeScript',
+      image: './assets/img/portfolio/default.svg',
+      github: 'https://github.com/tsz7250/Netflix-Ratings'
+    },
+    {
+      id: 'add-subtitles-extended',
+      title: 'add-subtitles-extended',
+      category: 'personal',
+      badge: '個人專案',
+      date: '2024-04',
+      topics: ["瀏覽器擴充", "多媒體工具"],
+      techStack: ["JavaScript", "Web Ext", "OpenCC"],
+      tags: ["瀏覽器擴充", "多媒體工具", "JavaScript", "Web Ext", "OpenCC"],
+      longDesc: '這是一個 Firefox 瀏覽器擴充套件，基於原始 add-subtitles 進行修復及優化。主要功能是為網頁上的任何 video 元素新增外部字幕檔案。我新增了多項功能：<ul><li>支援 ASS/SSA 字幕格式（原本只支援 SRT、VTT）。</li><li>使用 OpenCC-JS 實現自動簡體中文轉繁體中文。</li><li>支援 ZIP 壓縮檔中的字幕（使用 JSZip 函式庫）。</li><li>修復全螢幕播放功能。</li><li>改善外觀設計。</li></ul>同時，我重構了內容腳本注入邏輯，增加錯誤處理與狀態檢查，優化 OpenCC 加載流程，修復了字幕上傳功能。使用者可以調整字幕位置、大小和顏色，並使用鍵盤快捷鍵控制。',
+      tech: 'JavaScript (Web Ext)',
+      image: './assets/img/portfolio/add-subtitles-extended.png',
+      github: 'https://github.com/tsz7250/add-subtitles-extended'
+    },
+    {
       id: '1131_Chatbot_Final',
       title: '電影AI助手聊天機器人',
       category: 'academic',
