@@ -6,6 +6,9 @@
   --accent-orange-rgb: 224, 90, 16;
   --accent-orange-hover: #f1681e;
   --accent-orange-light: rgba(224, 90, 16, 0.15);
+  /* P1-2 對比修：橘底白字填色深階（對 #ffffff 5.2:1、hover 4.7:1，WCAG AA） */
+  --accent-orange-fill: #C2410C;
+  --accent-orange-fill-hover: #CC470D;
   --accent: var(--accent-orange);
   --accent-rgb: var(--accent-orange-rgb);
 }
@@ -21,18 +24,25 @@ body.scheme-midnight {
   --text-primary: #fffff5;
   --text-secondary: #c2c3c9;
   --text-muted: #919297;
+
+  /* P1-2 對比修：深底上的橘字（對 surface/elevated/chip 底皆 ≥4.5:1） */
+  --accent-orange-text: #ff944d;
   
   --border-color: rgba(255, 255, 255, 0.1);
   --border-subtle: rgba(255, 255, 255, 0.06);
   --border-hover: rgba(224, 90, 16, 0.5);
   
-  --badge-personal-bg: rgba(224, 90, 16, 0.18);
+  --badge-personal-bg: rgba(20, 16, 12, 0.88);
   --badge-personal-text: #ff944d;
   --badge-personal-border: rgba(224, 90, 16, 0.45);
   
-  --badge-school-bg: rgba(96, 165, 250, 0.15);
+  --badge-school-bg: rgba(20, 16, 12, 0.88);
   --badge-school-text: #93c5fd;
   --badge-school-border: rgba(96, 165, 250, 0.35);
+
+  --badge-extension-bg: rgba(20, 16, 12, 0.88);
+  --badge-extension-text: #5eead4;
+  --badge-extension-border: rgba(45, 212, 191, 0.35);
 
   --chip-bg: rgba(255, 255, 255, 0.08);
   --chip-text: #fffff5;
@@ -56,18 +66,25 @@ body.scheme-daylight {
   --text-primary: #1a1c20;
   --text-secondary: #4a4b50;
   --text-muted: #707175;
+
+  /* P1-2 對比修：淺底上的橘字（對白底 7.3:1、橘淡膜底 6.1:1，WCAG AA） */
+  --accent-orange-text: #9A3412;
   
   --border-color: rgba(26, 28, 32, 0.12);
   --border-subtle: rgba(26, 28, 32, 0.06);
   --border-hover: rgba(224, 90, 16, 0.6);
   
-  --badge-personal-bg: rgba(224, 90, 16, 0.12);
+  --badge-personal-bg: rgba(255, 252, 245, 0.92);
   --badge-personal-text: #c2410c;
   --badge-personal-border: rgba(224, 90, 16, 0.35);
   
-  --badge-school-bg: rgba(37, 99, 235, 0.1);
+  --badge-school-bg: rgba(255, 252, 245, 0.92);
   --badge-school-text: #1d4ed8;
   --badge-school-border: rgba(37, 99, 235, 0.3);
+
+  --badge-extension-bg: rgba(255, 252, 245, 0.92);
+  --badge-extension-text: #0f766e;
+  --badge-extension-border: rgba(13, 148, 136, 0.3);
 
   --chip-bg: #ecece2;
   --chip-text: #1a1c20;
@@ -92,16 +109,13 @@ body.scheme-daylight ::selection {
   text-shadow: none;
 }
 
-body.scheme-midnight section.bg-alt,
-body.scheme-midnight .testimonial {
+body.scheme-midnight section.bg-alt {
   background-color: var(--bg-alt);
 }
-body.scheme-daylight section.bg-alt,
-body.scheme-daylight .testimonial {
+body.scheme-daylight section.bg-alt {
   background-color: var(--bg-alt);
 }
 
-body.scheme-midnight a.cta-project:hover,
 body.scheme-midnight .top__brand,
 body.scheme-midnight div.boxed p a:hover,
 body.scheme-midnight .top__link:hover,
@@ -110,7 +124,6 @@ body.scheme-midnight .bio-links a {
   color: var(--text-primary);
 }
 
-body.scheme-daylight a.cta-project:hover,
 body.scheme-daylight .top__brand,
 body.scheme-daylight div.boxed p a:hover,
 body.scheme-daylight .top__link:hover,
@@ -136,17 +149,17 @@ body.scheme-daylight .site-footer a {
 }
 
 body.scheme-midnight .top__cta {
-  background-color: var(--accent-orange);
+  background-color: var(--accent-orange-fill);
   color: #fffff5;
 }
 body.scheme-midnight .top__cta:hover {
-  background-color: var(--accent-orange-hover);
+  background-color: var(--accent-orange-fill-hover);
 }
 
 body.scheme-daylight .top__cta {
-  background-color: var(--accent-orange);
+  background-color: var(--accent-orange-fill);
   color: #fffff5;
 }
 body.scheme-daylight .top__cta:hover {
-  background-color: var(--accent-orange-hover);
+  background-color: var(--accent-orange-fill-hover);
 }
